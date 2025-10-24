@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120">
+  <defs>
+    <linearGradient id="grad-common-app" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#56c0ff" />
+      <stop offset="100%" stop-color="#0078ff" />
+    </linearGradient>
+  </defs>
+  <rect width="240" height="120" rx="18" fill="#ffffff" />
+  <path d="M70 36c-16 0-28 12-28 30s12 30 28 30c7.8 0 14.6-3 20-8.4l-8.6-8.4c-3 3-6.8 4.8-11.4 4.8-8.4 0-14.2-6.8-14.2-18s5.8-18 14.2-18c4.4 0 8.4 1.8 11.4 4.8l8.6-8.4C84.6 39 77.8 36 70 36z" fill="url(#grad-common-app)" />
+  <path d="M120 36c-16 0-28 12-28 30s12 30 28 30c7.8 0 14.6-3 20-8.4l-8.6-8.4c-3 3-6.8 4.8-11.4 4.8-8.4 0-14.2-6.8-14.2-18s5.8-18 14.2-18c4.4 0 8.4 1.8 11.4 4.8l8.6-8.4C134.6 39 127.8 36 120 36z" fill="url(#grad-common-app)" opacity="0.7" />
+  <text x="150" y="66" font-family="'Arial', sans-serif" font-size="22" font-weight="700" fill="#1d1d36">Common</text>
+  <text x="150" y="92" font-family="'Arial', sans-serif" font-size="22" font-weight="700" fill="#1d1d36">App</text>
+</svg>

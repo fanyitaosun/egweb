@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 140">
+  <rect width="360" height="140" fill="#f5f8ff" rx="20" />
+  <circle cx="80" cy="70" r="52" fill="#ffd24d" />
+  <text x="80" y="84" font-family="'Times New Roman', serif" font-size="58" font-weight="700" fill="#2c4a7a" text-anchor="middle">UC</text>
+  <text x="156" y="62" font-family="'Helvetica Neue', sans-serif" font-size="28" fill="#2c4a7a" letter-spacing="2">A-G GUIDE</text>
+  <text x="156" y="96" font-family="'Helvetica Neue', sans-serif" font-size="18" fill="#2c4a7a" letter-spacing="3">UNIVERSITY OF CALIFORNIA</text>
+</svg>
