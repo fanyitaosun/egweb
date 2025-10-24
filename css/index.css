@@ -1,0 +1,62 @@
+/* Header吸顶 */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* 确保在最上层 */
+}
+
+/* Nav吸顶（位于Header下方） */
+nav {
+  position: sticky;
+  top: 104px; /* 需等于Header的实际高度 */
+  z-index: 90; /* 低于Header层级 */
+}
+
+/* 页面内容避让 */
+main {
+  margin-top: 120px; /* 需大于Header+Nav的总高度 */
+}
+
+.h-96{
+  height: 49rem !important;
+}
+
+.title-bg{
+  background-color: #41637B;
+}
+
+.bg-textsize{
+  font-size: 2.25rem ;
+}
+
+.h-cen{
+  width: 32.3125rem;
+  height: 26.1875rem;
+}
+
+.bg-aaa-800{
+  background-color: #1D1D36;
+}
+
+.max-w-7xl{
+  width: 77.6875rem !important;
+}
+
+
+/* 下拉框 */
+/* 确保下拉菜单在导航栏下方 */
+nav .group:hover > div {
+  display: block !important;
+}
+
+/* 下拉菜单样式 */
+.group:hover .absolute {
+  display: block !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .group-hover\:block {
+    display: none !important;
+  }
+}
