@@ -361,8 +361,14 @@ body {
 }
 
 .accreditations-carousel .carousel-slide {
-  flex: 0 0 calc(100% / var(--items-per-view));
-  min-width: calc(100% / var(--items-per-view));
+  flex: 0 0 calc(
+    (100% - (var(--items-per-view) - 1) * var(--carousel-gap)) /
+    var(--items-per-view)
+  );
+  min-width: calc(
+    (100% - (var(--items-per-view) - 1) * var(--carousel-gap)) /
+    var(--items-per-view)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
