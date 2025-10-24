@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120">
+  <rect width="360" height="120" fill="#ffffff" rx="16" />
+  <text x="26" y="56" font-family="'Georgia', serif" font-size="32" fill="#7a1b36">Middle States</text>
+  <text x="26" y="88" font-family="'Georgia', serif" font-size="32" fill="#7a1b36">Accreditation</text>
+  <rect x="210" y="22" width="120" height="76" rx="12" fill="#003d7c" />
+  <text x="222" y="70" font-family="'Arial', sans-serif" font-weight="700" font-size="30" fill="#ffffff">MSA</text>
+  <text x="226" y="96" font-family="'Arial', sans-serif" font-size="22" fill="#ffffff">CESS</text>
+</svg>

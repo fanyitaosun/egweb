@@ -311,6 +311,152 @@ body {
   transform: scale(1.03);
 }
 
+/* Accreditations carousel */
+.accreditations-section {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.accreditations-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand-navy);
+}
+
+.accreditations-subtitle {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.accreditations-carousel {
+  --items-per-view: 1.35;
+  --carousel-gap: 1.25rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accreditations-carousel:focus-visible {
+  outline: 3px solid var(--brand-blue);
+  outline-offset: 6px;
+}
+
+.accreditations-carousel .carousel-viewport {
+  overflow: hidden;
+  flex: 1;
+}
+
+.accreditations-carousel .carousel-track {
+  display: flex;
+  align-items: center;
+  gap: var(--carousel-gap);
+  padding: 0.5rem 0;
+  will-change: transform;
+  touch-action: pan-y;
+}
+
+.accreditations-carousel .carousel-slide {
+  flex: 0 0 calc(100% / var(--items-per-view));
+  min-width: calc(100% / var(--items-per-view));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  background: #ffffff;
+  box-shadow: 0 16px 28px rgba(29, 29, 54, 0.14);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accreditations-carousel .carousel-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 88px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.accreditations-carousel .carousel-slide:hover,
+.accreditations-carousel .carousel-slide:focus-within {
+  transform: scale(1.05);
+  box-shadow: 0 24px 44px rgba(29, 29, 54, 0.22);
+}
+
+.accreditations-carousel .carousel-slide:hover img,
+.accreditations-carousel .carousel-slide:focus-within img {
+  transform: scale(1.05);
+}
+
+.carousel-arrow {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(29, 29, 54, 0.15);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--brand-navy);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(29, 29, 54, 0.15);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-arrow:hover,
+.carousel-arrow:focus-visible {
+  background: var(--brand-navy);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 2rem;
+}
+
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  border: none;
+  background: rgba(29, 29, 54, 0.25);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-dots button.is-active {
+  background: var(--brand-navy);
+  transform: scale(1.4);
+}
+
+.carousel-dots button:focus-visible {
+  outline: 2px solid var(--brand-blue);
+  outline-offset: 3px;
+}
+
+@media (min-width: 480px) {
+  .accreditations-carousel {
+    --items-per-view: 1.6;
+  }
+}
+
+@media (min-width: 768px) {
+  .accreditations-carousel {
+    --items-per-view: 2.4;
+  }
+
+  .carousel-arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 @media (min-width: 640px) {
   nav .nav-link {
     width: 100%;

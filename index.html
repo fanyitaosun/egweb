@@ -163,10 +163,49 @@
     });
   </script>
 
-
-
-
-
+  <!-- Accreditations Carousel -->
+  <section class="accreditations-section py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="accreditations-title">认证机构</h2>
+        <p class="accreditations-subtitle">Trusted and recognized by leading education and accreditation partners.</p>
+      </div>
+      <div class="accreditations-carousel" data-autoplay-interval="3000" data-carousel-label="认证机构 LOGO 轮播">
+        <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="上一张认证" data-direction="prev">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="w-6 h-6"><path d="M14.7 5.3a1 1 0 0 1 0 1.4L10.41 11l4.3 4.3a1 1 0 0 1-1.42 1.4l-5-5a1 1 0 0 1 0-1.4l5-5a1 1 0 0 1 1.42 0z" fill="currentColor"/></svg>
+        </button>
+        <div class="carousel-viewport">
+          <ul class="carousel-track" aria-live="polite">
+            <li class="carousel-slide">
+              <img src="img/accreditations/common-app.svg" alt="The Common App accreditation logo">
+            </li>
+            <li class="carousel-slide">
+              <img src="img/accreditations/accjc.svg" alt="ACCJC accrediting commission logo">
+            </li>
+            <li class="carousel-slide">
+              <img src="img/accreditations/msa-cess.svg" alt="Middle States Association CESS accreditation logo">
+            </li>
+            <li class="carousel-slide">
+              <img src="img/accreditations/ncaa.svg" alt="NCAA member institution emblem">
+            </li>
+            <li class="carousel-slide">
+              <img src="img/accreditations/uc.svg" alt="University of California wordmark">
+            </li>
+            <li class="carousel-slide">
+              <img src="img/accreditations/uc-ag.svg" alt="University of California A-G Guide emblem">
+            </li>
+            <li class="carousel-slide">
+              <img src="img/accreditations/wasc.svg" alt="WASC accreditation seal">
+            </li>
+          </ul>
+        </div>
+        <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="下一张认证" data-direction="next">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="w-6 h-6"><path d="M9.3 18.7a1 1 0 0 1 0-1.4L13.59 13l-4.3-4.3a1 1 0 0 1 1.42-1.4l5 5a1 1 0 0 1 0 1.4l-5 5a1 1 0 0 1-1.42 0z" fill="currentColor"/></svg>
+        </button>
+      </div>
+      <div class="carousel-dots" role="tablist" aria-label="切换认证机构"></div>
+    </div>
+  </section>
 
 
 
@@ -274,6 +313,7 @@
         }
     </style>
 
+    <script src="js/accreditations-carousel.js"></script>
     <script src="js/device-redirect.js"></script>
 </body>
 </html>

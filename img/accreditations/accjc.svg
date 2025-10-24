@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120">
+  <rect width="320" height="120" fill="#ffffff" rx="16" />
+  <text x="24" y="70" font-family="'Georgia', serif" font-size="60" fill="#0d4b6f" letter-spacing="4">ACCJC</text>
+  <line x1="24" y1="84" x2="296" y2="84" stroke="#0d4b6f" stroke-width="3" />
+  <text x="26" y="102" font-family="'Arial', sans-serif" font-size="18" fill="#3e718f" letter-spacing="3">Accrediting Commission</text>
+  <text x="26" y="118" font-family="'Arial', sans-serif" font-size="18" fill="#3e718f" letter-spacing="3">for Community &amp; Junior Colleges</text>
+</svg>

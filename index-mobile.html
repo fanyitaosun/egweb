@@ -98,6 +98,50 @@
         <div class="panel-image" style="background-image: url('img/28b2c8_1cf5076db0a64595a1c2ef6f0a5c4688~mv2.jpg');" role="img" aria-label="Beach activity"></div>
     </section>
 
+    <!-- Accreditations Carousel -->
+    <section class="accreditations-section py-16 px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-10 space-y-3">
+                <h2 class="accreditations-title">认证机构</h2>
+                <p class="accreditations-subtitle">Trusted and recognized by leading education and accreditation partners.</p>
+            </div>
+            <div class="accreditations-carousel" data-autoplay-interval="3000" data-carousel-label="认证机构 LOGO 轮播">
+                <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="上一张认证" data-direction="prev">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="w-6 h-6"><path d="M14.7 5.3a1 1 0 0 1 0 1.4L10.41 11l4.3 4.3a1 1 0 0 1-1.42 1.4l-5-5a1 1 0 0 1 0-1.4l5-5a1 1 0 0 1 1.42 0z" fill="currentColor"/></svg>
+                </button>
+                <div class="carousel-viewport">
+                    <ul class="carousel-track" aria-live="polite">
+                        <li class="carousel-slide">
+                            <img src="img/accreditations/common-app.svg" alt="The Common App accreditation logo">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="img/accreditations/accjc.svg" alt="ACCJC accrediting commission logo">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="img/accreditations/msa-cess.svg" alt="Middle States Association CESS accreditation logo">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="img/accreditations/ncaa.svg" alt="NCAA member institution emblem">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="img/accreditations/uc.svg" alt="University of California wordmark">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="img/accreditations/uc-ag.svg" alt="University of California A-G Guide emblem">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="img/accreditations/wasc.svg" alt="WASC accreditation seal">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="下一张认证" data-direction="next">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="w-6 h-6"><path d="M9.3 18.7a1 1 0 0 1 0-1.4L13.59 13l-4.3-4.3a1 1 0 0 1 1.42-1.4l5 5a1 1 0 0 1 0 1.4l-5 5a1 1 0 0 1-1.42 0z" fill="currentColor"/></svg>
+                </button>
+            </div>
+            <div class="carousel-dots" role="tablist" aria-label="切换认证机构"></div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-aaa-800 text-white py-12">
         <div class="max-w-3xl mx-auto px-6 space-y-10">
@@ -177,6 +221,7 @@
             observer.observe(element);
         });
     </script>
+    <script src="js/accreditations-carousel.js"></script>
     <script src="js/device-redirect.js"></script>
 </body>
 </html>
