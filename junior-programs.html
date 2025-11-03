@@ -61,7 +61,15 @@
         <div class="flex justify-center space-x-8 py-4">
           <a href="index.html">Home</a>
           <!-- About 下拉菜单 -->
-          <a href="the-academy-at-miracosta.html">About</a>
+          <div class="relative group">
+            <a href="the-academy-at-miracosta.html" class="inline-flex items-center">About</a>
+            <div class="absolute left-1/2 z-20 hidden w-48 -translate-x-1/2 transform pt-2 group-hover:block">
+              <div class="overflow-hidden rounded-md bg-white py-2 shadow-lg ring-1 ring-black ring-opacity-5">
+                <a href="the-academy-at-miracosta.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Overview</a>
+                <a href="facultystaff.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Faculty and Staff</a>
+              </div>
+            </div>
+          </div>
           <a href="UCPP.html">UCPP</a>
           <a href="highschool.html">Learning</a>
           <a href="university-transfer.html">University Transfer</a>
