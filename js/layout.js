@@ -1,5 +1,5 @@
 const desktopHeaderHTML = `
-<div class="sticky top-0 z-50 shadow-sm">
+<div class="fixed inset-x-0 top-0 z-50 shadow-sm">
   <header class="bg-white border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-3">
@@ -41,7 +41,7 @@ const desktopHeaderHTML = `
 `;
 
 const mobileHeaderHTML = `
-<div class="sticky top-0 z-50 shadow-sm">
+<div class="fixed inset-x-0 top-0 z-50 shadow-sm">
   <header class="bg-white border-b border-gray-200">
     <div class="max-w-3xl mx-auto px-4 py-4 flex flex-col items-center space-y-4">
       <div class="flex items-center space-x-4">
@@ -220,7 +220,7 @@ function injectLayout(sectionAttribute, html) {
   const target = document.querySelector(`[data-include="${sectionAttribute}"]`);
   if (target) {
     target.innerHTML = html;
-    return target;
+    return target.firstElementChild || target;
   }
   return null;
 }
@@ -238,11 +238,25 @@ function initializeMobileMenu(container) {
   });
 }
 
+function applyHeaderOffset(container) {
+  if (!container) return;
+
+  const updateOffset = () => {
+    const height = container.getBoundingClientRect().height;
+    document.body.style.paddingTop = `${height}px`;
+  };
+
+  updateOffset();
+  window.addEventListener('resize', () => window.requestAnimationFrame(updateOffset));
+  window.addEventListener('load', updateOffset, { once: true });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   ensureLayoutStyles();
-  injectLayout('desktop-header', desktopHeaderHTML);
+  const desktopHeader = injectLayout('desktop-header', desktopHeaderHTML);
   injectLayout('desktop-footer', desktopFooterHTML);
   const mobileHeader = injectLayout('mobile-header', mobileHeaderHTML);
   injectLayout('mobile-footer', mobileFooterHTML);
+  applyHeaderOffset(desktopHeader || mobileHeader);
   initializeMobileMenu(mobileHeader);
 });
