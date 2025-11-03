@@ -45,29 +45,29 @@
     </div>
 
 
-    <div class="wrapper">
+    <div class="contact-wrapper">
       <!-- 第1个 -->
-      <section class="block block--color" id="block-1" style="background-color: #7391A7;">
-        <div class="block__inner">
-          <h2 class="block__title">Agent Inquiry</h2>
-          <p class="block__text">
+      <section class="contact-card contact-card--color" id="block-1" style="background-color: #7391A7;">
+        <div class="contact-card__inner">
+          <h2 class="contact-card__title">Agent Inquiry</h2>
+          <p class="contact-card__text">
             admission@tam-ucpp.com
           </p>
         </div>
       </section>
 
       <!-- 第2个 -->
-      <section class="block block--color" id="block-1  block-1" style="background-color: #1D1D36;">
-        <div class="block__inner">
+      <section class="contact-card contact-card--color" id="block-1  block-1" style="background-color: #1D1D36;">
+        <div class="contact-card__inner">
           <a href="" class="apply-btn"> Apply Now!</a>
         </div>
       </section>
 
       <!-- 第3个 -->
-      <section class="block block--color" id="block-1" style="background-color: #7391A7;">
-        <div class="block__inner">
-          <h2 class="block__title">Contact</h2>
-          <p class="block__text">
+      <section class="contact-card contact-card--color" id="block-1" style="background-color: #7391A7;">
+        <div class="contact-card__inner">
+          <h2 class="contact-card__title">Contact</h2>
+          <p class="contact-card__text">
             admission@tam-ucpp.com
           </p>
         </div>
@@ -76,7 +76,7 @@
     </div>
     <br><br><br><br>
     <style>
-      .wrapper {
+      .contact-wrapper {
         width: 100%;              /* 固定总宽度 */
         display: flex;
         flex-wrap: wrap;            /* 自动换行 */
@@ -84,7 +84,7 @@
         margin: 0 auto;             /* 居中 */
       }
 
-      .block {
+      .contact-card {
         flex: 0 0 calc(34% - 16px); /* 两列，每个占一半（减去gap） */
         min-height: 22.5rem;
         height: 31.25rem;
@@ -98,7 +98,7 @@
 
 
 
-      .block__inner {
+      .contact-card__inner {
         width: 100%;
         max-width: 90%;
         padding: 36px;
@@ -108,14 +108,14 @@
         text-align: center;
       }
 
-      .block__title {
+      .contact-card__title {
         margin: 0;
         font-size: 40px;
         color: #FFFFFF;
         font-weight: 700;
       }
 
-      .block__text {
+      .contact-card__text {
         margin-top: 18px;
         font-size: 16px;
         color: #FFFFFF;
@@ -137,7 +137,7 @@
       }
 
       /* 第4个白色背景里的文字颜色改深色 */
-      #block-4 .block__text {
+      #block-4 .contact-card__text {
         color: #fff;
       }
 
