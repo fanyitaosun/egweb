@@ -11,78 +11,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/layout.js" defer></script>
 </head>
 <body class="bg-white">
-    <!-- Top Header -->
-    <header class="bg-white border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-3">
-                <!-- Left side - Login -->
-                <div class="flex items-center space-x-2 text-sm text-gray-600">
-                    <!-- <i class="fas fa-user"></i> -->
-                    <span></span>
-                </div>
+    <div data-include="desktop-header"></div>
 
-                                <!-- Center - Logo -->
-                <div class="flex items-center">
-                    <div class="w-32   rounded-full flex items-center justify-center">
-                        <!-- <div class="text-white font-bold text-lg">
-                        </div> -->
-                        <img src="img\wechat_2025-09-28_121733_576.png" alt="">
-                        <img src="img\U-02(1).jpg" alt="" >
-                    </div>
-                </div>
-
-                                <!-- Right side - Social Media -->
-                <div class="flex items-center space-x-3">
-                    <!-- <a href="https://www.facebook.com/profile.php?id=100078084046035" target="_blank">
-                        <img src="img/0fdef751204647a3bbd7eaa2827ed4f9.png" alt="Facebook" class="w-6 h-6">
-                    </a>
-                    <a href="https://www.instagram.com/ta_miracosta/" target="_blank">
-                        <img src="img/01c3aff52f2a4dffa526d7a9843d46ea.png" alt="Instagram" class="w-6 h-6">
-                    </a>
-                    <a href="https://www.youtube.com/@miracostainternational1968" target="_blank">
-                        <img src="img/11062b_8dcadfa428954b1d919f8499f75aa27a~mv2.png" alt="YouTube" class="w-6 h-6">
-                    </a> -->
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <style>
-      .text-white a:hover{
-        color: #2A8542;
-      }
-    </style>
-    <!-- Navigation -->
-    <!-- Navigation -->
-    <nav class="bg-aaa-800 text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-center space-x-8 py-4">
-          <a href="index.html">Home</a>
-          <!-- About 下拉菜单 -->
-          <div class="relative group">
-            <a href="the-academy-at-miracosta.html" class="inline-flex items-center">About</a>
-            <div class="absolute left-1/2 z-20 hidden w-48 -translate-x-1/2 transform pt-2 group-hover:block">
-              <div class="overflow-hidden rounded-md bg-white py-2 shadow-lg ring-1 ring-black ring-opacity-5">
-                <a href="the-academy-at-miracosta.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Overview</a>
-                <a href="facultystaff.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Faculty and Staff</a>
-              </div>
-            </div>
-          </div>
-          <a href="UCPP.html">UCPP</a>
-          <a href="highschool.html">Learning</a>
-          <a href="university-transfer.html">University Transfer</a>
-          <a href="activities.html">Services</a>
-          <a href="campus-life.html">Campus Life</a>
-          <a href="junior-programs.html">Junior Programs</a>
-          <a href="connect.html">Connect</a>
-        </div>
-      </div>
-    </nav>
-
-
-    <style>
+<style>
       .c-title{
         font-size:3.75rem;
         text-align:center;
@@ -168,111 +102,8 @@
         </span>
       </p>
     </div>
+    <div data-include="desktop-footer"></div>
 
-
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer class="bg-aaa-800 text-white py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-          <!-- Logo Column -->
-          <div class="md:col-span-1">
-              <div class="flex items-center mb-4">
-                  <div class="w-10 h-10  rounded-full flex items-center justify-center mr-3">
-                  <img src="img/wechat_2025-09-28_143418_873.png" alt="">
-                  </div>
-                  <div>
-                  <div class="font-bold">The Academy</div>
-                  <div class="text-sm text-gray-400">at MiraCosta</div>
-                  </div>
-              </div>
-          </div>
-
-            <!-- Quick Navigation -->
-            <div>
-            <h4 class="font-bold mb-4 text-gray-300">QUICK NAVIGATION</h4>
-            <ul class="space-y-2 text-sm">
-                <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
-                <li><a href="the-academy-at-miracosta.html" class="text-gray-400 hover:text-white">About</a></li>
-                <li><a href="highschool.html" class="text-gray-400 hover:text-white">Learning</a></li>
-            </ul>
-            </div>
-
-            <div>
-              <h4 class="font-bold mb-4 text-gray-300">QUICK NAVIGATION</h4>
-              <ul class="space-y-2 text-sm">
-                  <li><a href="university-transfer.html" class="text-gray-400 hover:text-white">University Transfer</a></li>
-                  <li><a href="activities.html" class="text-gray-400 hover:text-white">Services</a></li>
-                  <li><a href="campus-life.html" class="text-gray-400 hover:text-white">Campus Life</a></li>
-              </ul>
-            </div>
-
-
-          <!-- Stay Connected & Get in Touch -->
-          <!-- <div>
-              <h4 class="font-bold mb-4 text-gray-300">STAY CONNECTED</h4>
-              <ul class="space-y-2 text-sm mb-6">
-                  <li><a href="https://www.facebook.com/profile.php?id=100078084046035" class="text-gray-400 hover:text-white">Facebook</a></li>
-                  <li><a href="https://www.instagram.com/ta_miracosta/" class="text-gray-400 hover:text-white">Instagram</a></li>
-                  <li><a href="https://www.youtube.com/@miracostainternational1968" class="text-gray-400 hover:text-white">YouTube</a></li>
-              </ul>
-          </div> -->
-
-          <!-- Get in Touch -->
-          <div>
-          <h4 class="font-bold mb-4 text-gray-300">GET IN TOUCH</h4>
-          <div class="text-sm text-gray-400 space-y-1">
-
-              <div>Tel: +1 510-499-2449</div>
-              <div>admission@tam-ucpp.com</div>
-          </div>
-          </div>
-
-                      <div class="footer-images">
-              <!-- 微信公众号 -->
-              <!-- <div class="img-hover">
-                <img src="img/652e4097-99e6-4d0f-a7ec-74dfa7e48db7.jpg" alt="微信公众号">
-                <span>微信公众号</span>
-              </div> -->
-
-              <!-- 小助手 -->
-              <div class="img-hover">
-                <img src="img/652e4097-99e6-4d0f-a7ec-74dfa7e48db7.jpg" alt="小助手">
-                <span>WeChat</span>
-              </div>
-            </div>
-
-      </div>
-      </div>
-  </footer>
-  <style>
-      .footer-images {
-        display: flex;
-        gap: 20px; /* 图片间距 */
-        justify-content: center; /* 居中整个行 */
-      }
-
-      .img-hover {
-        display: flex;
-        flex-direction: column; /* 图片在上，文字在下 */
-        align-items: center;    /* 水平居中 */
-        cursor: pointer;
-      }
-
-      .img-hover img {
-        width: 120px;
-        object-fit: cover;
-        transition: opacity 0.3s ease;
-      }
-
-
-      .img-hover span {
-        margin-top: 8px; /* 图片和文字间距 */
-        font-size: 14px;
-        color: #fff; /* 根据你的 Footer 文字颜色调整 */
-        text-align: center;
-      }
-  </style>
-    <script src="js/device-redirect.js"></script>
+<script src="js/device-redirect.js"></script>
 </body>
 </html>
