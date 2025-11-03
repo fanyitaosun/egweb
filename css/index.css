@@ -12,11 +12,6 @@ nav {
   z-index: 90; /* 低于Header层级 */
 }
 
-/* 页面内容避让 */
-main {
-  margin-top: 120px; /* 需大于Header+Nav的总高度 */
-}
-
 .h-96{
   height: 49rem !important;
 }
