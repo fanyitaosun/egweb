@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/mobile.css">
     <script src="js/layout.js" defer></script>
+    <script>
+      (function redirectDesktopUsers() {
+        const isMobile = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent) || window.matchMedia('(max-width: 768px)').matches;
+        if (!isMobile) {
+          window.location.replace('facultystaff.html');
+        }
+      })();
+    </script>
 </head>
 <body class="bg-white text-gray-900">
     <div data-include="mobile-header"></div>
@@ -107,7 +115,7 @@
                 <div class="contact-card">
                     <p class="text-sm uppercase tracking-[0.2em] text-white/70">Administrative Support</p>
                     <p class="text-lg font-semibold">Our team will connect you with the right mentor for admissions, course planning, or residential questions.</p>
-                    <p class="text-sm">Email <a href="mailto:info@tamiracosta.org">info@tamiracosta.org</a> for assistance.</p>
+                    <p class="text-sm">Email <a href="mailto:admission@tam-ucpp.com">admission@tam-ucpp.com</a> for assistance.</p>
                 </div>
             </div>
         </section>
