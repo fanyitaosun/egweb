@@ -1,82 +1,526 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCPP 北美大学直通车｜The Academy at MiraCosta（California）</title>
+    <meta name="description" content="5年完成8年学业，直录美国名校。多学分体系、官方大学成绩单、TOP50录取率100%。">
+    <meta property="og:title" content="UCPP 北美大学直通车｜The Academy at MiraCosta（California）">
+    <meta property="og:description" content="5年完成8年学业，直录美国名校。多学分、多支持、保障录取、真实美式校园体验。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/university_wellbeing_campus_scene.jpg">
+    <meta property="og:url" content="https://tam-ucpp.com/UCPP.html">
+    <link rel="canonical" href="https://tam-ucpp.com/UCPP.html">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <title>Student Services & Activities | TAM | UCPP</title>
-    <meta name="description" content="TAM offers diverse student services and extracurricular activities supporting academic growth and personal development, integrated with the University Credits Pathway Program (UCPP).">
-    <meta name="keywords" content="student services, activities, The Academy at MiraCosta, TAM, UCPP, University Credits Pathway Program, North American high school">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .section-container {
+        max-width: 1100px;
+      }
+
+      .anchor-nav a {
+        position: relative;
+      }
+
+      .anchor-nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        width: 100%;
+        height: 3px;
+        border-radius: 9999px;
+        background: transparent;
+        transition: background-color 0.2s ease;
+      }
+
+      .anchor-nav a:focus-visible {
+        outline: 2px solid #ffffff;
+        outline-offset: 4px;
+      }
+
+      .anchor-nav a:hover::after,
+      .anchor-nav a:focus-visible::after {
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      .faq details summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .faq details summary {
+        list-style: none;
+      }
+
+      .faq details:focus-visible {
+        outline: 2px solid #1d1d36;
+        outline-offset: 4px;
+      }
+    </style>
     <script src="js/layout.js" defer></script>
 </head>
-<body class="bg-white">
+<body class="bg-white text-gray-900">
     <div data-include="desktop-header"></div>
 
-<!-- UCPP Section -->
-    <section class="bg-gray-50 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center text-aaa-800 mb-8">University Credits Pathway Program (UCPP)</h2>
-            <p class="text-lg text-gray-700 text-center mb-4">The University Credits Pathway Program (UCPP) is a dual-credit program designed by The Academy at MiraCosta to fast-track students towards top North American universities. Experience real American high school and university life while earning both high school and university credits.</p>
-
-            <!-- Who is UCPP For? -->
-            <!-- Who is UCPP For? -->
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-              <div class="grid grid-cols-1  gap-12 justify-center items-center">
-                  <div class="space-y-4 text-center md:text-left">
-                      <h3 class="text-2xl font-semibold text-aaa-800 text-center mb-4">Who is UCPP For?</h3>
-                      <ul class="list-disc list-inside text-lg text-gray-700 text-center">
-                          <li>High school students preparing for university admission</li>
-                          <li>International students aiming for a fast-track pathway to top North American universities</li>
-                          <li>Students interested in a dual-credit system that offers both high school and university experience</li>
-                          <li>Students looking to save time and money on traditional education paths</li>
-                      </ul>
-                      <img src="img/_2025-09-29_200312_178.png" alt="UCPP Program" class="w-full h-auto rounded-lg shadow-lg mt-6 mx-auto">
-                  </div>
-              </div>
-            </div>
-
-            <!-- Why Choose UCPP? -->
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-              <div class="grid grid-cols-1  gap-12 justify-center items-center">
-                  <div class="space-y-4 text-center md:text-left">
-                      <h3 class="text-2xl font-semibold text-center text-aaa-800 mb-4">Why Choose UCPP?</h3>
-                      <ul class="list-disc list-inside text-lg text-gray-700 text-center">
-                          <li><strong>Accelerated Timeline:</strong> Complete 8 years of high school and university education in just 5 years.</li>
-                          <li><strong>Dual Credit System:</strong> Earn both high school and university credits simultaneously, opening doors to top universities.</li>
-                          <li><strong>Guaranteed Admission:</strong> Meet GPA and credit requirements to guarantee admission to top North American universities.</li>
-                          <li><strong>Cost-Efficiency:</strong> Save up to 60-70% of education costs compared to traditional education paths.</li>
-                          <li><strong>Real American Experience:</strong> Study directly on an American campus with immersive learning opportunities.</li>
-                      </ul>
-                      <img src="img/university_wellbeing_campus_scene.jpg" alt="Program Experience" class="w-full h-auto rounded-lg shadow-lg mt-6 mx-auto">
-                  </div>
-              </div>
-            </div>
-
-
-            <!-- Apply Now Section -->
-            <div class="mt-12 text-center">
-                <h3 class="text-2xl font-semibold text-aaa-800 mb-4">Apply Now!</h3>
-                <p class="text-lg text-gray-700 mb-6">Start your journey towards top-tier North American universities with UCPP. Fill out the form below or contact us via WeChat for more details.</p>
-                <form action="#" method="POST" class="space-y-4 max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
-                    <input type="text" name="name" placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded-md" required>
-                    <input type="email" name="email" placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded-md" required>
-                    <input type="text" name="phone" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded-md" required>
-                    <textarea name="message" placeholder="Message or Questions" class="w-full p-3 border border-gray-300 rounded-md" rows="4" required></textarea>
-                    <button type="submit" class="w-full py-3 bg-aaa-800 text-white font-semibold rounded-md hover:bg-aaa-700">Submit Application</button>
-                </form>
-                <p class="mt-4 text-sm text-gray-500">Or contact us directly via WeChat:</p>
-                <div class="flex justify-center mt-4">
-                    <img src="img/652e4097-99e6-4d0f-a7ec-74dfa7e48db7.jpg" alt="WeChat QR Code" class="w-48 h-48  ">
-                </div>
-            </div>
+    <main class="relative">
+      <header id="top" class="relative overflow-hidden">
+        <div aria-hidden="true" class="absolute inset-0">
+          <img src="img/university_wellbeing_campus_scene.jpg" alt="南加州 Oceanside 校园草坪" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-[#1D1D36]/80"></div>
         </div>
-    </section>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-20 pb-16 lg:pb-24 text-white">
+          <div class="flex flex-col gap-10">
+            <nav class="anchor-nav hidden lg:flex items-center gap-6 text-sm uppercase tracking-[0.2em] text-white/80">
+              <a href="#advantages" class="hover:text-white focus-visible:text-white">六大优势</a>
+              <a href="#mechanism" class="hover:text-white focus-visible:text-white">升学机制</a>
+              <a href="#academics" class="hover:text-white focus-visible:text-white">学术与课程</a>
+              <a href="#outcomes" class="hover:text-white focus-visible:text-white">录取案例</a>
+              <a href="#tuition" class="hover:text-white focus-visible:text-white">费用与周期</a>
+              <a href="#faq" class="hover:text-white focus-visible:text-white">FAQ</a>
+            </nav>
+
+            <div class="space-y-6">
+              <p class="text-sm font-semibold uppercase tracking-[0.3em] text-white/80">UCPP 北美大学直通车 | The Academy at MiraCosta · California</p>
+              <h1 class="text-4xl font-bold leading-snug sm:text-5xl lg:text-6xl">5年完成8年学业，直录美国名校！</h1>
+              <p class="text-lg sm:text-xl text-white/90">多学分 · 快毕业 · 好支持 · 省学费 · 保录取 · 真体验</p>
+              <p class="text-base sm:text-lg text-white/80">More Credits · Faster Graduation · Better Support · Lower Cost · Guaranteed Admission · Real Campus Experience</p>
+
+              <div class="flex flex-wrap items-center gap-3 text-xs font-medium uppercase tracking-[0.4em]">
+                <span class="inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-2">WASC</span>
+                <span class="inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-2">MSC</span>
+                <span class="inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-2">ACCJC</span>
+                <span class="inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-2">TOP50 录取率 100%</span>
+              </div>
+
+              <div class="flex flex-wrap gap-4 pt-4">
+                <a data-cta="connect" href="connect.html" class="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-base font-semibold text-[#1D1D36] transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                  现在申请
+                  <span class="ml-2 text-sm" aria-hidden="true">→</span>
+                </a>
+                <a data-cta="connect" href="connect.html" class="inline-flex items-center justify-center rounded-full border border-white/60 px-8 py-3 text-base font-semibold text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                  预约咨询
+                  <span class="ml-2 text-sm" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="sticky top-0 z-20 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/70 shadow-sm lg:hidden">
+        <div class="mx-auto flex max-w-6xl overflow-x-auto px-4 py-3 text-sm font-medium text-gray-700">
+          <a href="#advantages" class="mr-6 whitespace-nowrap">六大优势</a>
+          <a href="#mechanism" class="mr-6 whitespace-nowrap">升学机制</a>
+          <a href="#academics" class="mr-6 whitespace-nowrap">学术与课程</a>
+          <a href="#outcomes" class="mr-6 whitespace-nowrap">录取案例</a>
+          <a href="#tuition" class="mr-6 whitespace-nowrap">费用与周期</a>
+          <a href="#faq" class="whitespace-nowrap">FAQ</a>
+        </div>
+      </nav>
+
+      <section id="advantages" class="py-20 bg-gray-50">
+        <div class="mx-auto section-container px-6 space-y-14">
+          <div class="space-y-4 text-center">
+            <h2 class="text-3xl font-semibold text-[#1D1D36]">六大优势</h2>
+            <p class="text-base text-gray-600">保障录取 · 加速毕业 · 真实美国校园体验</p>
+          </div>
+
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-slate-100">
+              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#1D1D36]/10 text-[#1D1D36]"><i class="fas fa-certificate"></i></div>
+              <h3 class="text-xl font-semibold text-[#1D1D36]">保障录取</h3>
+              <p class="mt-3 text-sm text-gray-600">Guaranteed Admission to U.S. Top Universities</p>
+            </article>
+            <article class="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-slate-100">
+              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#1D1D36]/10 text-[#1D1D36]"><i class="fas fa-hourglass-half"></i></div>
+              <h3 class="text-xl font-semibold text-[#1D1D36]">5年完成8年课程</h3>
+              <p class="mt-3 text-sm text-gray-600">5 Years to Complete High School + University</p>
+            </article>
+            <article class="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-slate-100">
+              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#1D1D36]/10 text-[#1D1D36]"><i class="fas fa-piggy-bank"></i></div>
+              <h3 class="text-xl font-semibold text-[#1D1D36]">节省约700万教育成本</h3>
+              <p class="mt-3 text-sm text-gray-600">Save up to ¥7 Million</p>
+            </article>
+            <article class="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-slate-100">
+              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#1D1D36]/10 text-[#1D1D36]"><i class="fas fa-layer-group"></i></div>
+              <h3 class="text-xl font-semibold text-[#1D1D36]">双学分体系</h3>
+              <p class="mt-3 text-sm text-gray-600">Earn Both U.S. High School &amp; Real University Credits</p>
+            </article>
+            <article class="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-slate-100">
+              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#1D1D36]/10 text-[#1D1D36]"><i class="fas fa-school"></i></div>
+              <h3 class="text-xl font-semibold text-[#1D1D36]">高端私校美高</h3>
+              <p class="mt-3 text-sm text-gray-600">High-end Private U.S. Boarding High School</p>
+            </article>
+            <article class="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-slate-100">
+              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#1D1D36]/10 text-[#1D1D36]"><i class="fas fa-route"></i></div>
+              <h3 class="text-xl font-semibold text-[#1D1D36]">直接转入美国大学</h3>
+              <p class="mt-3 text-sm text-gray-600">Official University Transcript for Smooth Matriculation</p>
+            </article>
+          </div>
+
+          <p class="text-sm text-gray-500 text-center">所有课程均在加州百亿美金校园完成；小班 5–8 人，沉浸式美式教学体验。</p>
+        </div>
+      </section>
+
+      <section id="mechanism" class="py-20 bg-white">
+        <div class="mx-auto section-container px-6 space-y-12">
+          <div class="space-y-4 text-center">
+            <h2 class="text-3xl font-semibold text-[#1D1D36]">5年完成8年 · 升学机制</h2>
+            <p class="text-base text-gray-600">由入读到名校毕业的四大阶段，导师团队全程护航。</p>
+          </div>
+
+          <div class="grid gap-10 lg:grid-cols-4">
+            <article class="relative rounded-3xl border border-slate-200 p-8 shadow-sm">
+              <span class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#1D1D36] text-white text-lg font-semibold">1</span>
+              <h3 class="text-xl font-semibold text-[#1D1D36]">Step 1</h3>
+              <p class="mt-2 text-sm font-medium text-gray-700">入读 9–12 年级</p>
+              <p class="mt-3 text-sm text-gray-600">面试评估，定制个性化学习方案。</p>
+            </article>
+            <article class="relative rounded-3xl border border-slate-200 p-8 shadow-sm">
+              <span class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#1D1D36] text-white text-lg font-semibold">2</span>
+              <h3 class="text-xl font-semibold text-[#1D1D36]">Step 2</h3>
+              <p class="mt-2 text-sm font-medium text-gray-700">双学分学习（2–3 年）</p>
+              <p class="mt-3 text-sm text-gray-600">学术导师全程支持，小班 / 沉浸式课堂。</p>
+            </article>
+            <article class="relative rounded-3xl border border-slate-200 p-8 shadow-sm">
+              <span class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#1D1D36] text-white text-lg font-semibold">3</span>
+              <h3 class="text-xl font-semibold text-[#1D1D36]">Step 3</h3>
+              <p class="mt-2 text-sm font-medium text-gray-700">大学阶段衔接（2–3 年）</p>
+              <p class="mt-3 text-sm text-gray-600">凭官方大学成绩单与学分，直接转入美国大学。</p>
+            </article>
+            <article class="relative rounded-3xl border border-slate-200 p-8 shadow-sm">
+              <span class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#1D1D36] text-white text-lg font-semibold">4</span>
+              <h3 class="text-xl font-semibold text-[#1D1D36]">Step 4</h3>
+              <p class="mt-2 text-sm font-medium text-gray-700">名校毕业</p>
+              <p class="mt-3 text-sm text-gray-600">TOP50 录取率 100%，顺利完成本科阶段。</p>
+            </article>
+          </div>
+
+          <div class="text-center">
+            <a data-cta="connect" href="connect.html" class="inline-flex items-center justify-center rounded-full bg-[#1D1D36] px-10 py-3 text-base font-semibold text-white shadow-lg transition hover:bg-[#313158] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D1D36]">
+              查看招生要求
+              <span class="ml-2 text-sm" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="academics" class="py-20 bg-gray-50">
+        <div class="mx-auto section-container px-6 space-y-12">
+          <div class="space-y-4 text-center">
+            <h2 class="text-3xl font-semibold text-[#1D1D36]">学术与课程</h2>
+            <p class="text-base text-gray-600">覆盖六大方向，最高可获约 60 个大学学分。</p>
+          </div>
+
+          <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-start">
+            <div class="space-y-8">
+              <div class="space-y-3">
+                <h3 class="text-xl font-semibold text-[#1D1D36]">课程方向</h3>
+                <p class="text-sm text-gray-600">覆盖商科、理工/计算机、社会科学、人文、艺术、健康六大方向；最高可获约 60 个大学学分。</p>
+                <p class="text-sm text-gray-600">课程参考：大学写作、宏/微观经济学、会计、市场营销、计算机编程、微积分、统计、数据科学、物理/化学/生物（含实验）、心理学、国际关系、刑事司法、艺术设计、数字媒体、音乐理论/表演。</p>
+              </div>
+              <div class="space-y-3">
+                <h3 class="text-xl font-semibold text-[#1D1D36]">学术支持</h3>
+                <p class="text-sm text-gray-600">学术导师 1:1 规划与跟踪；小班授课（平均 5–8 人）；学习与生活双重支持；官方大学成绩单，便于直接转入美国大学。</p>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <div class="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-slate-100">
+                <p class="text-sm uppercase tracking-[0.3em] text-[#1D1D36]/70">Resources</p>
+                <h3 class="mt-4 text-2xl font-semibold text-[#1D1D36]">课程手册与申请</h3>
+                <p class="mt-3 text-sm text-gray-600">下载最新课程手册或直接与招生团队联系，获取个性化规划建议。</p>
+                <div class="mt-6 flex flex-wrap gap-4">
+                  <a href="files/UCPP-course-guide.pdf" class="inline-flex items-center justify-center rounded-full border border-[#1D1D36] px-7 py-3 text-sm font-semibold text-[#1D1D36] transition hover:bg-[#1D1D36] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D1D36]" download>
+                    下载课程手册（PDF）
+                    <span class="ml-2 text-xs" aria-hidden="true">↓</span>
+                  </a>
+                  <a data-cta="connect" href="connect.html" class="inline-flex items-center justify-center rounded-full bg-[#1D1D36] px-7 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-[#313158] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D1D36]">
+                    立即申请
+                    <span class="ml-2 text-xs" aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="outcomes" class="py-20 bg-white">
+        <div class="mx-auto section-container px-6 space-y-14">
+          <div class="space-y-4 text-center">
+            <h2 class="text-3xl font-semibold text-[#1D1D36]">录取案例 · TOP50 录取率 100%</h2>
+            <p class="text-base text-gray-600">UCPP 学生通过双学分体系，在 GPA 达标后顺利直录美国名校。</p>
+          </div>
+
+          <div class="grid gap-8 md:grid-cols-2">
+            <article class="rounded-3xl border border-slate-200 bg-white/80 p-8 shadow-sm">
+              <h3 class="text-xl font-semibold text-[#1D1D36]">小李</h3>
+              <p class="mt-2 text-sm font-medium text-gray-700">普通家庭学生 → 录取 UC Berkeley</p>
+              <p class="mt-4 text-sm text-gray-600">通过个性化学术规划与双学分积累，顺利达成加州大学伯克利分校录取要求。</p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-white/80 p-8 shadow-sm">
+              <h3 class="text-xl font-semibold text-[#1D1D36]">小杨</h3>
+              <p class="mt-2 text-sm font-medium text-gray-700">国际学校普通生 → 录取 UCLA</p>
+              <p class="mt-4 text-sm text-gray-600">沉浸式课堂与导师指导帮助其提升 GPA 与学术竞争力，获得 UCLA 录取。</p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-white/80 p-8 shadow-sm">
+              <h3 class="text-xl font-semibold text-[#1D1D36]">Sky Lei</h3>
+              <p class="mt-2 text-sm font-medium text-gray-700">中国学生 → 录取 Stanford University</p>
+              <p class="mt-4 text-sm text-gray-600">凭官方大学成绩单与研究项目经历，获得斯坦福大学青睐。</p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-white/80 p-8 shadow-sm">
+              <h3 class="text-xl font-semibold text-[#1D1D36]">小来</h3>
+              <p class="mt-2 text-sm font-medium text-gray-700">语言短板 → 录取 UC Davis</p>
+              <p class="mt-4 text-sm text-gray-600">在语言支持与小班教学中快速提升，成功直录加州大学戴维斯分校。</p>
+            </article>
+          </div>
+
+          <div class="rounded-3xl bg-gray-50 p-8 shadow-inner">
+            <p class="text-sm uppercase tracking-[0.3em] text-[#1D1D36]/70">Top Universities</p>
+            <div class="mt-6 grid grid-cols-2 gap-4 text-sm font-semibold text-[#1D1D36] sm:grid-cols-3 lg:grid-cols-5">
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">Stanford</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">UC Berkeley</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">UCLA</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">UC San Diego</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">UC Irvine</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">UC Davis</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">USC</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">NYU</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">Purdue</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">UIUC</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">Boston University</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">University of Michigan</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">University of Washington</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">Wisconsin–Madison</span>
+              <span class="rounded-xl bg-white px-4 py-3 text-center shadow-sm">UC Santa Barbara</span>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a data-cta="connect" href="connect.html" class="inline-flex items-center justify-center rounded-full bg-[#1D1D36] px-10 py-3 text-base font-semibold text-white shadow-lg transition hover:bg-[#313158] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D1D36]">
+              查看更多录取案例
+              <span class="ml-2 text-sm" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="tuition" class="py-20 bg-gray-50">
+        <div class="mx-auto section-container px-6 space-y-12">
+          <div class="space-y-4 text-center">
+            <h2 class="text-3xl font-semibold text-[#1D1D36]">费用与周期</h2>
+            <p class="text-base text-gray-600">节省约 3 年时间与约 700 万人民币。</p>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-2">
+            <article class="rounded-3xl border border-rose-200 bg-white p-10 shadow-lg">
+              <p class="text-sm uppercase tracking-[0.3em] text-rose-500">传统路径（8年）</p>
+              <h3 class="mt-4 text-2xl font-semibold text-[#1D1D36]">国际学校 + 美国高中 + 美国本科</h3>
+              <p class="mt-4 text-sm text-gray-600">总费用约 ¥800–1000 万。</p>
+            </article>
+            <article class="rounded-3xl border border-emerald-200 bg-white p-10 shadow-lg">
+              <p class="text-sm uppercase tracking-[0.3em] text-emerald-500">UCPP 路径（约 5 年）</p>
+              <h3 class="mt-4 text-2xl font-semibold text-[#1D1D36]">高中 + 大学双学分并行</h3>
+              <p class="mt-4 text-sm text-gray-600">直接转入美国大学；总费用约 ¥270–350 万（以当年发布为准）。</p>
+            </article>
+          </div>
+
+          <p class="text-center text-sm text-gray-600">节省约 3 年时间与约 700 万人民币。</p>
+
+          <div class="text-center pt-4">
+            <a data-cta="connect" href="connect.html" class="inline-flex items-center justify-center rounded-full bg-[#1D1D36] px-10 py-3 text-base font-semibold text-white shadow-lg transition hover:bg-[#313158] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D1D36]">
+              立即咨询
+              <span class="ml-2 text-sm" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="py-20 bg-white">
+        <div class="mx-auto section-container px-6 space-y-12">
+          <div class="space-y-4 text-center">
+            <h2 class="text-3xl font-semibold text-[#1D1D36]">常见问题 FAQ</h2>
+            <p class="text-base text-gray-600">了解更多 UCPP 项目细节，获得安心留学体验。</p>
+          </div>
+
+          <div class="faq space-y-4">
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm" open>
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-[#1D1D36] focus-visible:outline-none">
+                UCPP 与普通留学有何不同？
+                <span class="ml-4 text-sm text-[#1D1D36]/60">展开</span>
+              </summary>
+              <div class="mt-3 text-sm leading-relaxed text-gray-600">双学分体系、真实美国校区学习、官方大学成绩单，达标即直录美国名校。</div>
+            </details>
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm" open>
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-[#1D1D36] focus-visible:outline-none">
+                学分是否被大学认可？
+                <span class="ml-4 text-sm text-[#1D1D36]/60">展开</span>
+              </summary>
+              <div class="mt-3 text-sm leading-relaxed text-gray-600">学生获得的大学成绩单为官方记录，可支撑直接转入美国大学。</div>
+            </details>
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm" open>
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-[#1D1D36] focus-visible:outline-none">
+                英语较弱能适应吗？
+                <span class="ml-4 text-sm text-[#1D1D36]/60">展开</span>
+              </summary>
+              <div class="mt-3 text-sm leading-relaxed text-gray-600">小班授课与个性化支持，帮助学生逐步适应全英文课堂与学术要求。</div>
+            </details>
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-[#1D1D36] focus-visible:outline-none">
+                录取保障如何实现？
+                <span class="ml-4 text-sm text-[#1D1D36]/60">展开</span>
+              </summary>
+              <div class="mt-3 text-sm leading-relaxed text-gray-600">在完成课程与 GPA 要求、遵守学术诚信与相关政策前提下，学校提供保障录取路径与支持。</div>
+            </details>
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-[#1D1D36] focus-visible:outline-none">
+                项目学习周期多久？
+                <span class="ml-4 text-sm text-[#1D1D36]/60">展开</span>
+              </summary>
+              <div class="mt-3 text-sm leading-relaxed text-gray-600">约 5 年完成高中+本科阶段，节省约 3 年时间。</div>
+            </details>
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-[#1D1D36] focus-visible:outline-none">
+                课程在哪上？
+                <span class="ml-4 text-sm text-[#1D1D36]/60">展开</span>
+              </summary>
+              <div class="mt-3 text-sm leading-relaxed text-gray-600">所有课程均在加州百亿美金校园完成，真实线下课堂。</div>
+            </details>
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-[#1D1D36] focus-visible:outline-none">
+                毕业后能申请研究生吗？
+                <span class="ml-4 text-sm text-[#1D1D36]/60">展开</span>
+              </summary>
+              <div class="mt-3 text-sm leading-relaxed text-gray-600">学生毕业后拥有美国大学正式学历，可继续申请北美研究生或工作。</div>
+            </details>
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-[#1D1D36] focus-visible:outline-none">
+                申请流程复杂吗？
+                <span class="ml-4 text-sm text-[#1D1D36]/60">展开</span>
+              </summary>
+              <div class="mt-3 text-sm leading-relaxed text-gray-600">流程简洁：递交申请 → 面试评估 → 发录取 → 办签证 → 抵美入学。</div>
+            </details>
+          </div>
+
+          <div class="text-center pt-4">
+            <a data-cta="connect" href="connect.html" class="inline-flex items-center justify-center rounded-full bg-[#1D1D36] px-10 py-3 text-base font-semibold text-white shadow-lg transition hover:bg-[#313158] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D1D36]">
+              还有问题？立即咨询
+              <span class="ml-2 text-sm" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <div data-include="desktop-footer"></div>
 
-<script src="js/device-redirect.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "The Academy at MiraCosta",
+          "alternateName": "UCPP 北美大学直通车",
+          "url": "https://tam-ucpp.com/UCPP.html",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Oceanside",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+          },
+          "telephone": "+1 510-499-2449",
+          "email": "admission@tam-ucpp.com",
+          "sameAs": [
+            "https://www.facebook.com/theacademyatmiraCosta",
+            "https://www.instagram.com/theacademyatmiraCosta"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "UCPP 与普通留学有何不同？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "双学分体系、真实美国校区学习、官方大学成绩单，达标即直录美国名校。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "学分是否被大学认可？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "学生获得的大学成绩单为官方记录，可支撑直接转入美国大学。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "英语较弱能适应吗？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "小班授课与个性化支持，帮助学生逐步适应全英文课堂与学术要求。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "录取保障如何实现？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "在完成课程与 GPA 要求、遵守学术诚信与相关政策前提下，学校提供保障录取路径与支持。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "项目学习周期多久？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "约 5 年完成高中+本科阶段，节省约 3 年时间。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "课程在哪上？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "所有课程均在加州百亿美金校园完成，真实线下课堂。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "毕业后能申请研究生吗？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "学生毕业后拥有美国大学正式学历，可继续申请北美研究生或工作。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "申请流程复杂吗？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "流程简洁：递交申请 → 面试评估 → 发录取 → 办签证 → 抵美入学。"
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+    <script src="js/utm-propagation.js"></script>
+    <script src="js/device-redirect.js"></script>
 </body>
 </html>
