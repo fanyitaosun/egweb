@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/layout.js" defer></script>
+    <script>
+      (function redirectMobileUsers() {
+        const isMobile = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent) || window.matchMedia('(max-width: 768px)').matches;
+        if (isMobile) {
+          window.location.replace('facultystaff-mobile.html');
+        }
+      })();
+    </script>
 </head>
 <body class="bg-white text-gray-900">
     <div data-include="desktop-header"></div>
@@ -47,7 +55,7 @@
             <div class="px-6 py-8">
               <div class="grid justify-items-center gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/1.jpg">
+                  <img src="img/au/1.jpg" alt="Rick Cassar portrait" class="h-[250px] w-[200px] rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
                     <h4 class="text-lg font-semibold text-gray-900">Rick Cassar</h4>
                     <p class="text-sm text-gray-600">Trustee</p>
@@ -55,7 +63,7 @@
                 </article>
 
                 <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/4.jpg">
+                  <img src="img/au/4.jpg" alt="Ann Crosbie portrait" class="h-[250px] w-[200px] rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
                     <h4 class="text-lg font-semibold text-gray-900">Ann Crosbie</h4>
                     <p class="text-sm text-gray-600">Trustee</p>
@@ -63,7 +71,7 @@
                 </article>
 
                 <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/8.jpg">
+                  <img src="img/au/8.jpg" alt="Liwei Guo portrait" class="h-[250px] w-[200px] rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
                     <h4 class="text-lg font-semibold text-gray-900">Liwei Guo</h4>
                     <p class="text-sm text-gray-600">Trustee</p>

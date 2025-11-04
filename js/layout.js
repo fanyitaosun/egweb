@@ -198,7 +198,7 @@ const mobileFooterHTML = `
 
 const layoutUtilityStyles = `
 .text-white a:hover { color: #2A8542; }
-.footer-images { display: flex; gap: 20px; justify-content: center; }
+.footer-images { display: flex; gap: 20px; justify-content: flex-start; }
 .img-hover { display: flex; flex-direction: column; align-items: center; cursor: pointer; }
 .img-hover img { width: 120px; object-fit: cover; transition: opacity 0.3s ease; }
 .img-hover span { margin-top: 8px; font-size: 14px; color: #fff; text-align: center; }
