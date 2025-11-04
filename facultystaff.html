@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/layout.js" defer></script>
+    <script>
+      (function redirectMobileUsers() {
+        const isMobile = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent) || window.matchMedia('(max-width: 768px)').matches;
+        if (isMobile) {
+          window.location.replace('facultystaff-mobile.html');
+        }
+      })();
+    </script>
 </head>
 <body class="bg-white text-gray-900">
     <div data-include="desktop-header"></div>
@@ -38,32 +46,32 @@
 
       <!-- Mentor Modules -->
       <section class="pb-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6 space-y-12">
+        <div class="max-w-6xl mx-auto px-3 space-y-3">
           <!-- Board Of Trustees -->
           <div class="rounded-3xl bg-white shadow-lg ring-1 ring-black/5 overflow-hidden">
-            <div class="bg-gradient-to-r from-[#1D1D36] to-[#313158] px-6 py-6 text-white">
+            <div class="bg-gradient-to-r from-[#1D1D36] to-[#313158] px-3 py-3 text-white">
               <h3 class="text-2xl font-semibold">Board Of Trustees</h3>
             </div>
-            <div class="px-6 py-8">
-              <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/1.jpg">
+            <div class="px-3 py-3">
+              <div class="flex flex-wrap justify-center gap-10">
+                <article class="flex flex-col items-center text-center space-y-3">
+                  <img src="img/au/1.jpg" alt="Rick Cassar portrait" class="h-[250px] w-[200px] rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
                     <h4 class="text-lg font-semibold text-gray-900">Rick Cassar</h4>
                     <p class="text-sm text-gray-600">Trustee</p>
                   </div>
                 </article>
 
-                <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/4.jpg">
+                <article class="flex flex-col items-center text-center space-y-3">
+                  <img src="img/au/4.jpg" alt="Ann Crosbie portrait" class="h-[250px] w-[200px] rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
                     <h4 class="text-lg font-semibold text-gray-900">Ann Crosbie</h4>
                     <p class="text-sm text-gray-600">Trustee</p>
                   </div>
                 </article>
 
-                <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/8.jpg">
+                <article class="flex flex-col items-center text-center space-y-3">
+                  <img src="img/au/8.jpg" alt="Liwei Guo portrait" class="h-[250px] w-[200px] rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
                     <h4 class="text-lg font-semibold text-gray-900">Liwei Guo</h4>
                     <p class="text-sm text-gray-600">Trustee</p>
@@ -79,19 +87,19 @@
               <h3 class="text-2xl font-semibold">Academic Leadership</h3>
             </div>
             <div class="px-6 py-8">
-              <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="flex flex-wrap justify-center gap-10">
                 <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/21.jpg" alt="Prof. Liam Anderson portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
+                  <img src="img/au/21.jpg" alt="Michael Vu portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
-                    <h4 class="text-lg font-semibold text-gray-900">Prof. Liam Anderson</h4>
-                    <p class="text-sm text-gray-600">STEM Curriculum Lead</p>
+                    <h4 class="text-lg font-semibold text-gray-900">Michael Vu</h4>
+                    <p class="text-sm text-gray-600">Principal</p>
                   </div>
                 </article>
                 <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/22.jpg" alt="Dr. Grace Patel portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
+                  <img src="img/au/22.jpg" alt="Wenyan Du portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
-                    <h4 class="text-lg font-semibold text-gray-900">Dr. Grace Patel</h4>
-                    <p class="text-sm text-gray-600">Humanities Chair</p>
+                    <h4 class="text-lg font-semibold text-gray-900">Wenyan Du</h4>
+                    <p class="text-sm text-gray-600">Vice Principal</p>
                   </div>
                 </article>
               </div>
@@ -104,19 +112,19 @@
               <h3 class="text-2xl font-semibold">External Advisor</h3>
             </div>
             <div class="px-6 py-8">
-              <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="flex flex-wrap justify-center gap-10">
                 <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/31.jpg" alt="Daniel Wu portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
+                  <img src="img/au/31.jpg" alt="Hana Meng portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
-                    <h4 class="text-lg font-semibold text-gray-900">Daniel Wu</h4>
-                    <p class="text-sm text-gray-600">University Pathway Counselor</p>
+                    <h4 class="text-lg font-semibold text-gray-900">Hana Meng</h4>
+                    <p class="text-sm text-gray-600">Executive Director of Asian Recruitment & Partnerships</p>
                   </div>
                 </article>
                 <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/32.jpg" alt="Avery Thompson portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
+                  <img src="img/au/32.jpg" alt="Eresha Galewelage portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
-                    <h4 class="text-lg font-semibold text-gray-900">Avery Thompson</h4>
-                    <p class="text-sm text-gray-600">Student Life Coordinator</p>
+                    <h4 class="text-lg font-semibold text-gray-900">Eresha Galewelage</h4>
+                    <p class="text-sm text-gray-600">Chief Academic Interview Officer, Asia Region</p>
                   </div>
                 </article>
               </div>
@@ -126,29 +134,29 @@
           <!-- College Guidance -->
           <div class="rounded-3xl bg-white shadow-lg ring-1 ring-black/5 overflow-hidden">
             <div class="bg-gradient-to-r from-[#1D1D36] to-[#313158] px-6 py-6 text-white">
-              <h3 class="text-2xl font-semibold">Teaching Faculty</h3>
+              <h3 class="text-2xl font-semibold">Teaching Faculty</h3>
             </div>
             <div class="px-6 py-8">
-              <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="flex flex-wrap justify-center gap-10">
                 <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/41.jpg" alt="Isabella Nguyen portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
+                  <img src="img/au/41.jpg" alt="Emily Latham portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
-                    <h4 class="text-lg font-semibold text-gray-900">Isabella Nguyen</h4>
-                    <p class="text-sm text-gray-600">Lead College Counselor</p>
+                    <h4 class="text-lg font-semibold text-gray-900">Emily Latham</h4>
+                    <p class="text-sm text-gray-600">Global Director of Academic Affairs</p>
                   </div>
                 </article>
                 <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/42.jpg" alt="Marcus Hill portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
+                  <img src="img/au/42.jpg" alt="Ciara Church portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
-                    <h4 class="text-lg font-semibold text-gray-900">Marcus Hill</h4>
-                    <p class="text-sm text-gray-600">Scholarship Advisor</p>
+                    <h4 class="text-lg font-semibold text-gray-900">Ciara Church</h4>
+                    <p class="text-sm text-gray-600">Senior Global Research Advisor</p>
                   </div>
                 </article>
                 <article class="flex flex-col items-center text-center space-y-4">
-                  <img src="img/au/43.jpg" alt="Priya Das portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
+                  <img src="img/au/43.jpg" alt="Jane Gankiewicz portrait" class="h-32 w-32 rounded-[5px] object-cover shadow-lg ring-4 ring-[#1D1D36]/20">
                   <div class="space-y-1">
-                    <h4 class="text-lg font-semibold text-gray-900">Priya Das</h4>
-                    <p class="text-sm text-gray-600">Career Planning Specialist</p>
+                    <h4 class="text-lg font-semibold text-gray-900">Jane Gankiewicz</h4>
+                    <p class="text-sm text-gray-600">Senior Global Research Advisor</p>
                   </div>
                 </article>
               </div>
@@ -156,7 +164,7 @@
           </div>
 
           <p class="text-sm text-gray-500 text-center">
-            如需联系特定导师，请通过 <a href="mailto:info@tamiracosta.org" class="text-aaa-800 underline">info@tamiracosta.org</a> 与学校行政办公室取得联系。
+            如需联系特定导师，请通过 <a href="mailto:admission@tam-ucpp.com" class="text-aaa-800 underline">admission@tam-ucpp.com</a> 与学校行政办公室取得联系。
           </p>
         </div>
       </section>
