@@ -67,11 +67,61 @@
         outline: 2px solid #1d1d36;
         outline-offset: 4px;
       }
+
+      .section-floating-nav {
+        display: none;
+      }
+
+      .section-floating-nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        border: 1px solid rgba(29, 29, 54, 0.1);
+        padding: 0.65rem 1.5rem;
+        background: rgba(255, 255, 255, 0.9);
+        color: #1d1d36;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      .section-floating-nav a:hover,
+      .section-floating-nav a:focus-visible {
+        background: #1d1d36;
+        color: #fff;
+        outline: none;
+      }
+
+      @media (min-width: 1024px) {
+        .section-floating-nav {
+          position: fixed;
+          top: 50%;
+          left: 30px;
+          transform: translateY(-50%);
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          z-index: 30;
+        }
+      }
     </style>
     <script src="js/layout.js" defer></script>
 </head>
 <body class="bg-white text-gray-900">
     <div data-include="desktop-header"></div>
+
+    <nav class="section-floating-nav" aria-label="章节导航">
+      <a href="#advantages">六大优势</a>
+      <a href="#mechanism">升学机制</a>
+      <a href="#academics">学术与课程</a>
+      <a href="#outcomes">录取案例</a>
+      <a href="#tuition">费用与周期</a>
+      <a href="#faq">FAQ</a>
+    </nav>
 
     <main class="relative">
       <header id="top" class="relative overflow-hidden">
