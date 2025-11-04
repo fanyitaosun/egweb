@@ -10,50 +10,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/layout.js" defer></script>
 </head>
 <body class="bg-white text-gray-900">
-    <header class="bg-white border-b border-gray-200 shadow-sm">
-        <div class="max-w-3xl mx-auto px-4 py-4 flex flex-col items-center space-y-4">
-            <div class="flex items-center space-x-4">
-                <img src="img/wechat_2025-09-28_121733_576.png" alt="WeChat QR" class="h-16 w-16 rounded-full object-cover">
-                <img src="img/U-02(1).jpg" alt="The Academy at MiraCosta" class="h-16 w-16 rounded-full object-cover">
-            </div>
-            <div class="text-center space-y-1">
-                <p class="text-sm uppercase tracking-widest text-gray-500">Connect With Us</p>
-                <p class="text-lg font-semibold text-gray-700">We’re ready to answer your questions</p>
-            </div>
-        </div>
-    </header>
+        <div data-include="mobile-header"></div>
 
-    <nav class="bg-aaa-800 text-white sticky top-0 z-40 shadow-md">
-        <div class="max-w-3xl mx-auto px-4">
-            <div class="flex items-center justify-between py-3">
-                <span class="text-sm font-semibold tracking-wider uppercase">Navigate</span>
-                <button id="mobileMenuButton" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white" aria-expanded="false" aria-controls="mobileMenu" type="button">
-                    <span class="sr-only">Toggle navigation</span>
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-                        <circle cx="5" cy="6" r="1.5" />
-                        <rect x="9" y="4.5" width="10" height="3" rx="1.5" />
-                        <circle cx="5" cy="12" r="1.5" />
-                        <rect x="9" y="10.5" width="10" height="3" rx="1.5" />
-                        <circle cx="5" cy="18" r="1.5" />
-                        <rect x="9" y="16.5" width="10" height="3" rx="1.5" />
-                    </svg>
-                </button>
-            </div>
-            <div id="mobileMenu" class="hidden flex-col space-y-3 pb-4 text-sm">
-                <a class="nav-link" href="index-mobile.html">Home</a>
-                <a class="nav-link" href="the-academy-at-miracosta-mobile.html">About</a>
-                <a class="nav-link" href="UCPP-mobile.html">UCPP</a>
-                <a class="nav-link" href="highschool-mobile.html">Learning</a>
-                <a class="nav-link" href="university-transfer-mobile.html">University Transfer</a>
-                <a class="nav-link" href="activities-mobile.html">Services</a>
-                <a class="nav-link" href="campus-life-mobile.html">Campus Life</a>
-                <a class="nav-link" href="junior-programs-mobile.html">Junior Programs</a>
-                <a class="nav-link" href="connect-mobile.html">Connect</a>
-            </div>
-        </div>
-    </nav>
+
 
     <section class="hero-section relative flex items-center justify-center text-center text-white" style="--hero-image: url('img/652e4097-99e6-4d0f-a7ec-74dfa7e48db7.jpg');">
         <div class="hero-overlay absolute inset-0"></div>
@@ -120,77 +82,6 @@
         </section>
     </main>
 
-    <footer class="bg-aaa-800 text-white py-12">
-        <div class="max-w-3xl mx-auto px-6 space-y-10">
-            <div class="flex flex-col items-center space-y-4">
-                <div class="flex items-center space-x-3">
-                    <img src="img/wechat_2025-09-28_143418_873.png" alt="The Academy icon" class="h-12 w-12 rounded-full object-cover">
-                    <div class="text-left">
-                        <div class="font-bold tracking-wide">The Academy</div>
-                        <div class="text-sm text-gray-400">at MiraCosta</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-6 text-sm">
-                <div class="space-y-3">
-                    <h4 class="footer-heading">Quick Navigation</h4>
-                    <ul class="space-y-2">
-                        <li><a href="index-mobile.html" class="footer-link">Home</a></li>
-                        <li><a href="UCPP-mobile.html" class="footer-link">UCPP</a></li>
-                        <li><a href="the-academy-at-miracosta-mobile.html" class="footer-link">About</a></li>
-                    </ul>
-                </div>
-                <div class="space-y-3">
-                    <h4 class="footer-heading">Quick Navigation</h4>
-                    <ul class="space-y-2">
-                        <li><a href="highschool-mobile.html" class="footer-link">Learning</a></li>
-                        <li><a href="university-transfer-mobile.html" class="footer-link">University Transfer</a></li>
-                        <li><a href="activities-mobile.html" class="footer-link">Services</a></li>
-                    </ul>
-                </div>
-                <div class="space-y-3">
-                    <h4 class="footer-heading">Get in Touch</h4>
-                    <div class="text-gray-300 space-y-1">
-                        <div>Oceanside, CA 92056</div>
-                        <div>Tel: +1 510-499-2449</div>
-                        <div>admission@tam-ucpp.com</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center space-y-4">
-                <div class="img-hover">
-                    <img src="img/652e4097-99e6-4d0f-a7ec-74dfa7e48db7.jpg" alt="WeChat contact" class="rounded-lg shadow-md">
-                    <span>WeChat</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const menuButton = document.getElementById('mobileMenuButton');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        menuButton.addEventListener('click', () => {
-            const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-            menuButton.setAttribute('aria-expanded', String(!isExpanded));
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.2 });
-
-        document.querySelectorAll('.scroll-fade').forEach((element) => {
-            observer.observe(element);
-        });
-    </script>
-    <script src="js/device-redirect.js"></script>
+    <div data-include="mobile-footer"></div>
 </body>
 </html>
