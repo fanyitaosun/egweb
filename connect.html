@@ -64,7 +64,7 @@
               </p>
             </div>
 
-            <form action="https://api.easyagroup.com/api/ucpp/form/submit" method="post" class="space-y-8">
+            <form id="inquiry-form" action="http://api.easyagroup.com/api/ucpp/form/submit" method="post" class="space-y-8">
               <div class="grid gap-6 sm:grid-cols-2">
                 <div class="space-y-2">
                   <label for="first-name" class="block text-sm font-medium text-gray-700">First Name *</label>
@@ -150,6 +150,7 @@
                 <button type="submit" class="inline-flex items-center justify-center rounded-full bg-[#1D1D36] px-10 py-3 text-sm font-semibold uppercase tracking-wider text-white hover:bg-[#313158] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D1D36]">
                   Submit
                 </button>
+                <p id="form-feedback" class="mt-4 text-sm text-gray-600" role="status" aria-live="polite"></p>
               </div>
             </form>
           </div>
@@ -164,6 +165,9 @@
     const relationshipSelect = document.getElementById('relationship');
     const studentNameGroup = document.getElementById('student-name-group');
     const studentNameInput = document.getElementById('student-name');
+    const form = document.getElementById('inquiry-form');
+    const feedback = document.getElementById('form-feedback');
+    const submitButton = form.querySelector('button[type="submit"]');
 
     const toggleStudentName = () => {
       if (!relationshipSelect.value || relationshipSelect.value === 'Student') {
@@ -178,6 +182,39 @@
 
     relationshipSelect.addEventListener('change', toggleStudentName);
     toggleStudentName();
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      feedback.textContent = '';
+      feedback.classList.remove('text-green-600', 'text-red-600');
+      submitButton.disabled = true;
+      submitButton.classList.add('opacity-60');
+
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        feedback.textContent = 'Your information has been submitted successfully. Our team will follow up shortly.';
+        feedback.classList.remove('text-red-600', 'text-gray-600');
+        feedback.classList.add('text-green-600');
+        form.reset();
+        toggleStudentName();
+      } catch (error) {
+        feedback.textContent = 'There was a problem submitting the form. Please try again later or contact us directly.';
+        feedback.classList.remove('text-green-600', 'text-gray-600');
+        feedback.classList.add('text-red-600');
+      } finally {
+        submitButton.disabled = false;
+        submitButton.classList.remove('opacity-60');
+      }
+    });
   });
 </script>
 <script src="js/device-redirect.js"></script>
