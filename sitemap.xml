@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap for https://www.tam-ucpp.com/
+  Purpose: Help AI & search engines index all bilingual desktop & mobile pages
+  用于帮助AI与搜索引擎抓取中英文桌面与移动端页面
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home / 首页 -->
+  <url><loc>https://www.tam-ucpp.com/index.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/index-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/index-mobile.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/index-mobile-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+
+  <!-- Academy Overview / 学院概览 -->
+  <url><loc>https://www.tam-ucpp.com/the-academy-at-miracosta.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/the-academy-at-miracosta-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/the-academy-at-miracosta-mobile.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/the-academy-at-miracosta-mobile-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+
+  <!-- UCPP Program / UCPP 项目 -->
+  <url><loc>https://www.tam-ucpp.com/UCPP.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/UCPP-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/UCPP-mobile.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/UCPP-mobile-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+
+  <!-- Faculty & Staff / 师资团队 -->
+  <url><loc>https://www.tam-ucpp.com/facultystaff.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/facultystaff-mobile.html</loc><lastmod>2025-11-07</lastmod></url>
+
+  <!-- High School Pathway / 美高课程 -->
+  <url><loc>https://www.tam-ucpp.com/highschool.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/highschool-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/highschool-mobile.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/highschool-mobile-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+
+  <!-- University Transfer / 大学转学 -->
+  <url><loc>https://www.tam-ucpp.com/university-transfer.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/university-transfer-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/university-transfer-mobile.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/university-transfer-mobile-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+
+  <!-- Activities / 活动体验 -->
+  <url><loc>https://www.tam-ucpp.com/activities.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/activities-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/activities-mobile.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/activities-mobile-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+
+  <!-- Campus Life / 校园生活 -->
+  <url><loc>https://www.tam-ucpp.com/campus-life.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/campus-life-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/campus-life-mobile.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/campus-life-mobile-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+
+  <!-- Junior Programs / 少年项目 -->
+  <url><loc>https://www.tam-ucpp.com/junior-programs.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/junior-programs-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/junior-programs-mobile.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/junior-programs-mobile-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+
+  <!-- Contact / 联系我们 -->
+  <url><loc>https://www.tam-ucpp.com/connect.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/connect-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/connect-mobile.html</loc><lastmod>2025-11-07</lastmod></url>
+  <url><loc>https://www.tam-ucpp.com/connect-mobile-zh.html</loc><lastmod>2025-11-07</lastmod></url>
+
+</urlset>
