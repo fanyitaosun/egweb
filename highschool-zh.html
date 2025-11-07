@@ -117,7 +117,7 @@
         margin: 0 auto;             /* 居中 */
       }
 
-      .block {
+      .wrapper > .block {
         flex: 0 0 calc(50% - 12px); /* 两列，每个占一半（减去gap） */
         min-height: 22.5rem;
         height: 35.375rem;
@@ -129,13 +129,13 @@
         justify-content: center;
       }
 
-      .block--image {
+      .wrapper > .block.block--image {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
       }
 
-      .block__inner {
+      .wrapper > .block .block__inner {
         width: 100%;
         max-width: 90%;
         padding: 36px;
