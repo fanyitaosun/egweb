@@ -61,19 +61,19 @@ const desktopHeaderChinese = `
   <nav class="bg-aaa-800 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-center space-x-8 py-4">
-        <a href="index.html">首页</a>
+        <a href="index-zh.html">首页</a>
         <div class="relative group">
-          <a href="the-academy-at-miracosta.html" class="inline-flex items-center">关于我们</a>
+          <a href="the-academy-at-miracosta-zh.html" class="inline-flex items-center">关于我们</a>
           <div class="absolute left-1/2 z-20 hidden w-48 -translate-x-1/2 transform pt-2 group-hover:block">
             <div class="overflow-hidden rounded-md bg-white py-2 shadow-lg ring-1 ring-black ring-opacity-5">
-              <a href="the-academy-at-miracosta.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">学校概况</a>
+              <a href="the-academy-at-miracosta-zh.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">学校概况</a>
               <a href="facultystaff.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">师资团队</a>
             </div>
           </div>
         </div>
         <a href="UCPP-zh.html">UCPP项目</a>
-        <a href="highschool.html">学习项目</a>
-        <a href="university-transfer.html">大学转学</a>
+        <a href="highschool-zh.html">学习项目</a>
+        <a href="university-transfer-zh.html">大学转学</a>
         <a href="activities.html">增值服务</a>
         <a href="campus-life.html">校园生活</a>
         <a href="junior-programs.html">菁英课程</a>
@@ -158,14 +158,14 @@ const mobileHeaderChinese = `
         </button>
       </div>
       <div id="mobileMenu" class="hidden flex-col space-y-3 pb-4 text-sm">
-        <a class="nav-link" href="index-mobile.html">首页</a>
+        <a class="nav-link" href="index-mobile-zh.html">首页</a>
         <div class="space-y-2">
-          <a class="nav-link" href="the-academy-at-miracosta-mobile.html">关于我们</a>
+          <a class="nav-link" href="the-academy-at-miracosta-mobile-zh.html">关于我们</a>
           <a class="nav-link pl-4" href="facultystaff.html">师资团队</a>
         </div>
         <a class="nav-link" href="UCPP-mobile-zh.html">UCPP项目</a>
-        <a class="nav-link" href="highschool-mobile.html">学习项目</a>
-        <a class="nav-link" href="university-transfer-mobile.html">大学转学</a>
+        <a class="nav-link" href="highschool-mobile-zh.html">学习项目</a>
+        <a class="nav-link" href="university-transfer-mobile-zh.html">大学转学</a>
         <a class="nav-link" href="activities-mobile.html">增值服务</a>
         <a class="nav-link" href="campus-life-mobile.html">校园生活</a>
         <a class="nav-link" href="junior-programs-mobile.html">菁英课程</a>
