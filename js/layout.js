@@ -74,10 +74,10 @@ const desktopHeaderChinese = `
         <a href="UCPP-zh.html">UCPP项目</a>
         <a href="highschool-zh.html">学习项目</a>
         <a href="university-transfer-zh.html">大学转学</a>
-        <a href="activities.html">增值服务</a>
-        <a href="campus-life.html">校园生活</a>
-        <a href="junior-programs.html">菁英课程</a>
-        <a href="connect.html">联系我们</a>
+        <a href="activities-zh.html">增值服务</a>
+        <a href="campus-life-zh.html">校园生活</a>
+        <a href="junior-programs-zh.html">菁英课程</a>
+        <a href="connect-zh.html">联系我们</a>
       </div>
     </div>
   </nav>
@@ -166,10 +166,10 @@ const mobileHeaderChinese = `
         <a class="nav-link" href="UCPP-mobile-zh.html">UCPP项目</a>
         <a class="nav-link" href="highschool-mobile-zh.html">学习项目</a>
         <a class="nav-link" href="university-transfer-mobile-zh.html">大学转学</a>
-        <a class="nav-link" href="activities-mobile.html">增值服务</a>
-        <a class="nav-link" href="campus-life-mobile.html">校园生活</a>
-        <a class="nav-link" href="junior-programs-mobile.html">菁英课程</a>
-        <a class="nav-link" href="connect-mobile.html">联系我们</a>
+        <a class="nav-link" href="activities-mobile-zh.html">增值服务</a>
+        <a class="nav-link" href="campus-life-mobile-zh.html">校园生活</a>
+        <a class="nav-link" href="junior-programs-mobile-zh.html">菁英课程</a>
+        <a class="nav-link" href="connect-mobile-zh.html">联系我们</a>
       </div>
     </div>
   </nav>
@@ -178,7 +178,7 @@ const mobileHeaderChinese = `
 
 const mobileHeaderHTML = isChinesePage ? mobileHeaderChinese : mobileHeaderEnglish;
 
-const desktopFooterHTML = `
+const desktopFooterEnglish = `
 <footer class="bg-aaa-800 text-white py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
@@ -236,7 +236,65 @@ const desktopFooterHTML = `
 </footer>
 `;
 
-const mobileFooterHTML = `
+const desktopFooterChinese = `
+<footer class="bg-aaa-800 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div class="md:col-span-1">
+        <div class="flex items-center mb-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3">
+            <img src="img/wechat_2025-09-28_143418_873.png" alt="The Academy icon" class="h-10 w-10 rounded-full object-cover">
+          </div>
+          <div>
+            <div class="font-bold">The Academy</div>
+            <div class="text-sm text-gray-400">at MiraCosta</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-gray-300">快速导航</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index-zh.html" class="text-gray-400 hover:text-white">首页</a></li>
+          <li><a href="the-academy-at-miracosta-zh.html" class="text-gray-400 hover:text-white">关于我们</a></li>
+          <li><a href="highschool-zh.html" class="text-gray-400 hover:text-white">学习项目</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-gray-300">快速导航</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="university-transfer-zh.html" class="text-gray-400 hover:text-white">大学转学</a></li>
+          <li><a href="activities-zh.html" class="text-gray-400 hover:text-white">增值服务</a></li>
+          <li><a href="campus-life-zh.html" class="text-gray-400 hover:text-white">校园生活</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-gray-300">快速导航</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="junior-programs-zh.html" class="text-gray-400 hover:text-white">菁英课程</a></li>
+          <li><a href="connect-zh.html" class="text-gray-400 hover:text-white">联系我们</a></li>
+          <li><a href="facultystaff.html" class="text-gray-400 hover:text-white">师资团队</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-gray-300">联系我们</h4>
+        <div class="text-sm text-gray-400 space-y-1">
+          <div>美国加州 欧申赛德 92056</div>
+          <div>电话：+1 510-499-2449</div>
+          <div>admission@tam-ucpp.com</div>
+        </div>
+        <div class="footer-images mt-4">
+          <div class="img-hover">
+            <img src="img/652e4097-99e6-4d0f-a7ec-74dfa7e48db7.jpg" alt="招生微信二维码" class="rounded-lg shadow-md">
+            <span>微信</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+`;
+
+const mobileFooterEnglish = `
 <footer class="bg-aaa-800 text-white py-12">
   <div class="max-w-3xl mx-auto px-6 space-y-10">
     <div class="flex flex-col items-center space-y-4">
@@ -291,6 +349,65 @@ const mobileFooterHTML = `
   </div>
 </footer>
 `;
+
+const mobileFooterChinese = `
+<footer class="bg-aaa-800 text-white py-12">
+  <div class="max-w-3xl mx-auto px-6 space-y-10">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="flex items-center space-x-3">
+        <img src="img/wechat_2025-09-28_143418_873.png" alt="The Academy icon" class="h-12 w-12 rounded-full object-cover">
+        <div class="text-left">
+          <div class="font-bold tracking-wide">The Academy</div>
+          <div class="text-sm text-gray-400">at MiraCosta</div>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-6 text-sm">
+      <div class="space-y-3">
+        <h4 class="footer-heading">快速导航</h4>
+        <ul class="space-y-2">
+          <li><a href="index-mobile-zh.html" class="footer-link">首页</a></li>
+          <li><a href="the-academy-at-miracosta-mobile-zh.html" class="footer-link">关于我们</a></li>
+          <li><a href="highschool-mobile-zh.html" class="footer-link">学习项目</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <h4 class="footer-heading">快速导航</h4>
+        <ul class="space-y-2">
+          <li><a href="university-transfer-mobile-zh.html" class="footer-link">大学转学</a></li>
+          <li><a href="activities-mobile-zh.html" class="footer-link">增值服务</a></li>
+          <li><a href="campus-life-mobile-zh.html" class="footer-link">校园生活</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <h4 class="footer-heading">快速导航</h4>
+        <ul class="space-y-2">
+          <li><a href="junior-programs-mobile-zh.html" class="footer-link">菁英课程</a></li>
+          <li><a href="connect-mobile-zh.html" class="footer-link">联系我们</a></li>
+          <li><a href="facultystaff.html" class="footer-link">师资团队</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <h4 class="footer-heading">联系方式</h4>
+        <div class="text-gray-300 space-y-1">
+          <div>美国加州 欧申赛德 92056</div>
+          <div>电话：+1 510-499-2449</div>
+          <div>admission@tam-ucpp.com</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center space-y-4">
+      <div class="img-hover">
+        <img src="img/652e4097-99e6-4d0f-a7ec-74dfa7e48db7.jpg" alt="招生微信二维码" class="rounded-lg shadow-md">
+        <span>微信</span>
+      </div>
+    </div>
+  </div>
+</footer>
+`;
+
+const desktopFooterHTML = isChinesePage ? desktopFooterChinese : desktopFooterEnglish;
+const mobileFooterHTML = isChinesePage ? mobileFooterChinese : mobileFooterEnglish;
 
 const layoutUtilityStyles = `
 .text-white a:hover { color: #2A8542; }

@@ -23,12 +23,20 @@
     'university-transfer-mobile-zh.html': 'university-transfer-zh.html',
     'activities.html': 'activities-mobile.html',
     'activities-mobile.html': 'activities.html',
+    'activities-zh.html': 'activities-mobile-zh.html',
+    'activities-mobile-zh.html': 'activities-zh.html',
     'campus-life.html': 'campus-life-mobile.html',
     'campus-life-mobile.html': 'campus-life.html',
+    'campus-life-zh.html': 'campus-life-mobile-zh.html',
+    'campus-life-mobile-zh.html': 'campus-life-zh.html',
     'junior-programs.html': 'junior-programs-mobile.html',
     'junior-programs-mobile.html': 'junior-programs.html',
+    'junior-programs-zh.html': 'junior-programs-mobile-zh.html',
+    'junior-programs-mobile-zh.html': 'junior-programs-zh.html',
     'connect.html': 'connect-mobile.html',
-    'connect-mobile.html': 'connect.html'
+    'connect-mobile.html': 'connect.html',
+    'connect-zh.html': 'connect-mobile-zh.html',
+    'connect-mobile-zh.html': 'connect-zh.html'
   };
 
   const target = redirectMap[fileName];
