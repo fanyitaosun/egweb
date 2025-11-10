@@ -30,6 +30,91 @@
       }
     </style>
     <script src="js/layout.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://www.tam-ucpp.com/#org",
+      "name": "The Academy at MiraCosta (TAM) — UCPP",
+      "url": "https://www.tam-ucpp.com/",
+      "logo": "https://www.tam-ucpp.com/img/U-02(1).jpg",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "admission@tam-ucpp.com",
+        "telephone": "+1-510-499-2449",
+        "areaServed": ["CN", "US"],
+        "availableLanguage": ["en", "zh"]
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://www.tam-ucpp.com/UCPP-mobile.html#product",
+      "name": "UCPP — University Credits Pathway Program",
+      "description": "UCPP (University Credits Pathway Program) from The Academy at MiraCosta helps international students earn dual high school and university credits on campus and secure admission to Top 50 U.S. universities.",
+      "url": "https://www.tam-ucpp.com/UCPP-mobile.html",
+      "image": [
+        "https://www.tam-ucpp.com/img/university_wellbeing_campus_scene.jpg"
+      ],
+      "brand": {
+        "@type": "Organization",
+        "@id": "https://www.tam-ucpp.com/#org"
+      },
+      "category": "Education Program",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": [
+          "International Students",
+          "High School Students",
+          "Parents"
+        ]
+      },
+      "isAccessibleForFree": false,
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "Contact For Price",
+        "url": "https://www.tam-ucpp.com/UCPP-mobile.html#tuition",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.tam-ucpp.com/UCPP-mobile.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is UCPP different from traditional study abroad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UCPP combines dual credits, in-person learning on the Oceanside campus, and official university transcripts that support Top 50 admission when GPA benchmarks are met."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the credits recognized by universities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students earn official university transcripts that make it straightforward to transfer credits and secure admission to U.S. universities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the program take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most students finish high school and undergraduate requirements in about five years, saving roughly three years compared with traditional pathways."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-white text-gray-900">
     <div data-include="mobile-header"></div>
@@ -374,117 +459,7 @@
       });
     </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Product",
-          "name": "UCPP North America Direct University Pathway",
-          "description": "Finish eight years of study in five years through UCPP's dual-credit pathway at The Academy at MiraCosta, earning official transcripts and Top 50 admission guidance.",
-          "brand": {
-            "@type": "Brand",
-            "name": "The Academy at MiraCosta"
-          },
-          "url": "https://tam-ucpp.com/UCPP-mobile.html",
-          "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "CNY",
-            "lowPrice": "2700000",
-            "highPrice": "3500000",
-            "availability": "https://schema.org/InStock"
-          }
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "The Academy at MiraCosta",
-          "alternateName": "UCPP North America Direct University Pathway",
-          "url": "https://tam-ucpp.com/UCPP-mobile.html",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Oceanside",
-            "addressRegion": "CA",
-            "addressCountry": "US"
-          },
-          "telephone": "+1 510-499-2449",
-          "email": "admission@tam-ucpp.com",
-          "sameAs": [
-            "https://www.facebook.com/theacademyatmiraCosta",
-            "https://www.instagram.com/theacademyatmiraCosta"
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "How is UCPP different from traditional study abroad?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "UCPP combines dual credits, on-campus learning in California, and official university transcripts that guarantee admission when GPA benchmarks are met."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Are the credits recognized by universities?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Students earn official university transcripts that support direct transfer and admission to U.S. universities."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can students with developing English skills adapt?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Small classes and individualized support help students adjust to English-medium academics step by step."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How is the admission guarantee delivered?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Meeting course and GPA requirements while upholding academic integrity ensures the guaranteed admission pathway and support."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long does the program take?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Students typically complete high school and undergraduate studies in about five years, saving roughly three years overall."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Where are the courses delivered?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "All courses take place on our multibillion-dollar California campus with in-person instruction."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can graduates pursue graduate school afterward?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Graduates earn a U.S. university degree, enabling applications to North American graduate programs or direct employment."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is the application process complicated?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The streamlined process includes application submission, interview, offer issuance, visa preparation, and arrival in the U.S."
-              }
-            }
-          ]
-        }
-      ]
-    }
-    </script>
+    
     <script src="js/utm-propagation.js"></script>
     <script src="js/device-redirect.js"></script>
 </body>

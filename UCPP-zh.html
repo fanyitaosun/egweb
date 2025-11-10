@@ -91,6 +91,93 @@
       }
     </style>
     <script src="js/layout.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://www.tam-ucpp.com/#org",
+      "name": "The Academy at MiraCosta (TAM) — UCPP",
+      "url": "https://www.tam-ucpp.com/",
+      "logo": "https://www.tam-ucpp.com/img/U-02(1).jpg",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "admission@tam-ucpp.com",
+        "telephone": "+1-510-499-2449",
+        "areaServed": ["CN", "US"],
+        "availableLanguage": ["en", "zh"]
+      }]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://www.tam-ucpp.com/UCPP-zh.html#product",
+      "name": "UCPP — 北美大学直通车项目",
+      "description": "UCPP（University Credits Pathway Program）由 The Academy at MiraCosta 推出，帮助国际学生在加州校园同步修读美高与大学学分，并更高效地升入美国TOP50名校。",
+      "url": "https://www.tam-ucpp.com/UCPP-zh.html",
+      "image": [
+        "https://www.tam-ucpp.com/img/university_wellbeing_campus_scene.jpg"
+      ],
+      "brand": {
+        "@type": "Organization",
+        "@id": "https://www.tam-ucpp.com/#org"
+      },
+      "category": "Education Program",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": [
+          "国际学生",
+          "高中生",
+          "家长"
+        ]
+      },
+      "isAccessibleForFree": false,
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "Contact For Price",
+        "url": "https://www.tam-ucpp.com/UCPP-zh.html#tuition",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.tam-ucpp.com/UCPP-zh.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "UCPP 与普通留学路径有什么区别？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UCPP 在加州真实校园内同步修读美高与大学学分，提供官方成绩单与录取保障，让学生更确定地进入美国TOP50大学。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "UCPP 的大学学分是否被认可？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "学生获得的官方大学成绩单可直接用于转学与录取，帮助顺利衔接美国大学。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "项目通常需要多长时间完成？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "大部分学生约五年完成美高与本科阶段，相比传统路径节省约三年时间。"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-white text-gray-900">
     <div data-include="desktop-header"></div>
@@ -526,117 +613,7 @@
 
       });
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Product",
-          "name": "UCPP 北美大学直通车",
-          "description": "5年完成8年学业，通过加州校区双学分体系获取官方成绩单，保障冲刺美国TOP50名校。",
-          "brand": {
-            "@type": "Brand",
-            "name": "The Academy at MiraCosta"
-          },
-          "url": "https://tam-ucpp.com/UCPP-zh.html",
-          "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "CNY",
-            "lowPrice": "2700000",
-            "highPrice": "3500000",
-            "availability": "https://schema.org/InStock"
-          }
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "The Academy at MiraCosta",
-          "alternateName": "UCPP 北美大学直通车",
-          "url": "https://tam-ucpp.com/UCPP-zh.html",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Oceanside",
-            "addressRegion": "CA",
-            "addressCountry": "US"
-          },
-          "telephone": "+1 510-499-2449",
-          "email": "admission@tam-ucpp.com",
-          "sameAs": [
-            "https://www.facebook.com/theacademyatmiraCosta",
-            "https://www.instagram.com/theacademyatmiraCosta"
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "UCPP 与普通留学有何不同？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "双学分体系、真实美国校区学习、官方大学成绩单，达标即直录美国名校。"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "学分是否被大学认可？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "学生获得的大学成绩单为官方记录，可支撑直接转入美国大学。"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "英语较弱能适应吗？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "小班授课与个性化支持，帮助学生逐步适应全英文课堂与学术要求。"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "录取保障如何实现？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "在完成课程与 GPA 要求、遵守学术诚信与相关政策前提下，学校提供保障录取路径与支持。"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "项目学习周期多久？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "约 5 年完成高中+本科阶段，节省约 3 年时间。"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "课程在哪上？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "所有课程均在加州百亿美金校园完成，真实线下课堂。"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "毕业后能申请研究生吗？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "学生毕业后拥有美国大学正式学历，可继续申请北美研究生或工作。"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "申请流程复杂吗？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "流程简洁：递交申请 → 面试评估 → 发录取 → 办签证 → 抵美入学。"
-              }
-            }
-          ]
-        }
-      ]
-    }
-    </script>
+    
     <script src="js/utm-propagation.js"></script>
     <script src="js/device-redirect.js"></script>
 </body>
