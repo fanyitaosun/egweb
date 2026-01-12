@@ -1,4 +1,6 @@
-const desktopHeaderHTML = `
+const isChinesePage = (document.documentElement.lang || '').toLowerCase().startsWith('zh');
+
+const desktopHeaderEnglish = `
 <div class="fixed inset-x-0 top-0 z-50 shadow-sm">
   <header class="bg-white border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,7 +12,7 @@ const desktopHeaderHTML = `
           <img src="img/U-02(1).jpg" alt="The Academy at MiraCosta" class="h-[110px] w-auto object-contain">
           <img src="img/wechat_2025-09-28_121733_576.png" alt="WeChat QR" class="h-16 w-16 rounded-full object-cover">
         </div>
-        <div class="flex items-center space-x-3"></div>
+        <a href="#" class="lang-switch hidden" data-lang-switch>中文</a>
       </div>
     </div>
   </header>
@@ -40,13 +42,60 @@ const desktopHeaderHTML = `
 </div>
 `;
 
-const mobileHeaderHTML = `
+const desktopHeaderChinese = `
 <div class="fixed inset-x-0 top-0 z-50 shadow-sm">
   <header class="bg-white border-b border-gray-200">
-    <div class="max-w-3xl mx-auto px-4 py-4 flex flex-col items-center space-y-4">
-      <div class="flex items-center space-x-4">
-        <img src="img/U-02(1).jpg" alt="The Academy at MiraCosta" class="h-[110px] w-auto object-contain">
-        <img src="img/wechat_2025-09-28_121733_576.png" alt="WeChat QR" class="h-16 w-16 rounded-full object-cover">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-3">
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+          <span></span>
+        </div>
+        <div class="flex items-center gap-6">
+          <img src="img/U-02(1).jpg" alt="The Academy at MiraCosta" class="h-[110px] w-auto object-contain">
+          <img src="img/wechat_2025-09-28_121733_576.png" alt="WeChat QR" class="h-16 w-16 rounded-full object-cover">
+        </div>
+        <a href="#" class="lang-switch hidden" data-lang-switch>EN</a>
+      </div>
+    </div>
+  </header>
+  <nav class="bg-aaa-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center space-x-8 py-4">
+        <a href="index-zh.html">首页</a>
+        <div class="relative group">
+          <a href="the-academy-at-miracosta-zh.html" class="inline-flex items-center">关于我们</a>
+          <div class="absolute left-1/2 z-20 hidden w-48 -translate-x-1/2 transform pt-2 group-hover:block">
+            <div class="overflow-hidden rounded-md bg-white py-2 shadow-lg ring-1 ring-black ring-opacity-5">
+              <a href="the-academy-at-miracosta-zh.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">学校概况</a>
+              <a href="facultystaff.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">师资团队</a>
+            </div>
+          </div>
+        </div>
+        <a href="UCPP-zh.html">UCPP项目</a>
+        <a href="highschool-zh.html">学习项目</a>
+        <a href="university-transfer-zh.html">大学转学</a>
+        <a href="activities-zh.html">增值服务</a>
+        <a href="campus-life-zh.html">校园生活</a>
+        <a href="junior-programs-zh.html">菁英课程</a>
+        <a href="connect-zh.html">联系我们</a>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+const desktopHeaderHTML = isChinesePage ? desktopHeaderChinese : desktopHeaderEnglish;
+
+const mobileHeaderEnglish = `
+<div class="fixed inset-x-0 top-0 z-50 shadow-sm">
+  <header class="bg-white border-b border-gray-200">
+    <div class="max-w-3xl mx-auto px-4 py-4 space-y-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+          <img src="img/U-02(1).jpg" alt="The Academy at MiraCosta" class="h-[110px] w-auto object-contain">
+          <img src="img/wechat_2025-09-28_121733_576.png" alt="WeChat QR" class="h-16 w-16 rounded-full object-cover">
+        </div>
+        <a href="#" class="lang-switch hidden" data-lang-switch>中文</a>
       </div>
       <div class="text-center space-y-1">
         <p class="text-sm uppercase tracking-widest text-gray-500">The Academy at MiraCosta</p>
@@ -82,7 +131,54 @@ const mobileHeaderHTML = `
 </div>
 `;
 
-const desktopFooterHTML = `
+const mobileHeaderChinese = `
+<div class="fixed inset-x-0 top-0 z-50 shadow-sm">
+  <header class="bg-white border-b border-gray-200">
+    <div class="max-w-3xl mx-auto px-4 py-4 space-y-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+          <img src="img/U-02(1).jpg" alt="The Academy at MiraCosta" class="h-[110px] w-auto object-contain">
+          <img src="img/wechat_2025-09-28_121733_576.png" alt="WeChat QR" class="h-16 w-16 rounded-full object-cover">
+        </div>
+        <a href="#" class="lang-switch hidden" data-lang-switch>EN</a>
+      </div>
+      <div class="text-center space-y-1">
+        <p class="text-sm uppercase tracking-widest text-gray-500">The Academy at MiraCosta</p>
+        <p class="text-lg font-semibold text-gray-700">美式高中毕业解决方案</p>
+      </div>
+    </div>
+  </header>
+  <nav class="bg-aaa-800 text-white shadow-md">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="flex items-center justify-between py-3">
+        <span class="text-sm font-semibold tracking-wider uppercase">网站导航</span>
+        <button id="mobileMenuButton" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle navigation" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO2OF3kAAAAASUVORK5CYII=" alt="Mobile navigation toggle" class="w-6 h-6 object-contain" loading="lazy">
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden flex-col space-y-3 pb-4 text-sm">
+        <a class="nav-link" href="index-mobile-zh.html">首页</a>
+        <div class="space-y-2">
+          <a class="nav-link" href="the-academy-at-miracosta-mobile-zh.html">关于我们</a>
+          <a class="nav-link pl-4" href="facultystaff.html">师资团队</a>
+        </div>
+        <a class="nav-link" href="UCPP-mobile-zh.html">UCPP项目</a>
+        <a class="nav-link" href="highschool-mobile-zh.html">学习项目</a>
+        <a class="nav-link" href="university-transfer-mobile-zh.html">大学转学</a>
+        <a class="nav-link" href="activities-mobile-zh.html">增值服务</a>
+        <a class="nav-link" href="campus-life-mobile-zh.html">校园生活</a>
+        <a class="nav-link" href="junior-programs-mobile-zh.html">菁英课程</a>
+        <a class="nav-link" href="connect-mobile-zh.html">联系我们</a>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+const mobileHeaderHTML = isChinesePage ? mobileHeaderChinese : mobileHeaderEnglish;
+
+const desktopFooterEnglish = `
 <footer class="bg-aaa-800 text-white py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
@@ -140,7 +236,65 @@ const desktopFooterHTML = `
 </footer>
 `;
 
-const mobileFooterHTML = `
+const desktopFooterChinese = `
+<footer class="bg-aaa-800 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div class="md:col-span-1">
+        <div class="flex items-center mb-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3">
+            <img src="img/wechat_2025-09-28_143418_873.png" alt="The Academy icon" class="h-10 w-10 rounded-full object-cover">
+          </div>
+          <div>
+            <div class="font-bold">The Academy</div>
+            <div class="text-sm text-gray-400">at MiraCosta</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-gray-300">快速导航</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index-zh.html" class="text-gray-400 hover:text-white">首页</a></li>
+          <li><a href="the-academy-at-miracosta-zh.html" class="text-gray-400 hover:text-white">关于我们</a></li>
+          <li><a href="highschool-zh.html" class="text-gray-400 hover:text-white">学习项目</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-gray-300">快速导航</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="university-transfer-zh.html" class="text-gray-400 hover:text-white">大学转学</a></li>
+          <li><a href="activities-zh.html" class="text-gray-400 hover:text-white">增值服务</a></li>
+          <li><a href="campus-life-zh.html" class="text-gray-400 hover:text-white">校园生活</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-gray-300">快速导航</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="junior-programs-zh.html" class="text-gray-400 hover:text-white">菁英课程</a></li>
+          <li><a href="connect-zh.html" class="text-gray-400 hover:text-white">联系我们</a></li>
+          <li><a href="facultystaff.html" class="text-gray-400 hover:text-white">师资团队</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-gray-300">联系我们</h4>
+        <div class="text-sm text-gray-400 space-y-1">
+          <div>美国加州 欧申赛德 92056</div>
+          <div>电话：+1 510-499-2449</div>
+          <div>admission@tam-ucpp.com</div>
+        </div>
+        <div class="footer-images mt-4">
+          <div class="img-hover">
+            <img src="img/652e4097-99e6-4d0f-a7ec-74dfa7e48db7.jpg" alt="招生微信二维码" class="rounded-lg shadow-md">
+            <span>微信</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+`;
+
+const mobileFooterEnglish = `
 <footer class="bg-aaa-800 text-white py-12">
   <div class="max-w-3xl mx-auto px-6 space-y-10">
     <div class="flex flex-col items-center space-y-4">
@@ -196,6 +350,65 @@ const mobileFooterHTML = `
 </footer>
 `;
 
+const mobileFooterChinese = `
+<footer class="bg-aaa-800 text-white py-12">
+  <div class="max-w-3xl mx-auto px-6 space-y-10">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="flex items-center space-x-3">
+        <img src="img/wechat_2025-09-28_143418_873.png" alt="The Academy icon" class="h-12 w-12 rounded-full object-cover">
+        <div class="text-left">
+          <div class="font-bold tracking-wide">The Academy</div>
+          <div class="text-sm text-gray-400">at MiraCosta</div>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-6 text-sm">
+      <div class="space-y-3">
+        <h4 class="footer-heading">快速导航</h4>
+        <ul class="space-y-2">
+          <li><a href="index-mobile-zh.html" class="footer-link">首页</a></li>
+          <li><a href="the-academy-at-miracosta-mobile-zh.html" class="footer-link">关于我们</a></li>
+          <li><a href="highschool-mobile-zh.html" class="footer-link">学习项目</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <h4 class="footer-heading">快速导航</h4>
+        <ul class="space-y-2">
+          <li><a href="university-transfer-mobile-zh.html" class="footer-link">大学转学</a></li>
+          <li><a href="activities-mobile-zh.html" class="footer-link">增值服务</a></li>
+          <li><a href="campus-life-mobile-zh.html" class="footer-link">校园生活</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <h4 class="footer-heading">快速导航</h4>
+        <ul class="space-y-2">
+          <li><a href="junior-programs-mobile-zh.html" class="footer-link">菁英课程</a></li>
+          <li><a href="connect-mobile-zh.html" class="footer-link">联系我们</a></li>
+          <li><a href="facultystaff.html" class="footer-link">师资团队</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <h4 class="footer-heading">联系方式</h4>
+        <div class="text-gray-300 space-y-1">
+          <div>美国加州 欧申赛德 92056</div>
+          <div>电话：+1 510-499-2449</div>
+          <div>admission@tam-ucpp.com</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center space-y-4">
+      <div class="img-hover">
+        <img src="img/652e4097-99e6-4d0f-a7ec-74dfa7e48db7.jpg" alt="招生微信二维码" class="rounded-lg shadow-md">
+        <span>微信</span>
+      </div>
+    </div>
+  </div>
+</footer>
+`;
+
+const desktopFooterHTML = isChinesePage ? desktopFooterChinese : desktopFooterEnglish;
+const mobileFooterHTML = isChinesePage ? mobileFooterChinese : mobileFooterEnglish;
+
 const layoutUtilityStyles = `
 .text-white a:hover { color: #2A8542; }
 .footer-images { display: flex; gap: 20px; justify-content: flex-start; }
@@ -205,6 +418,26 @@ const layoutUtilityStyles = `
 .footer-heading { font-weight: 700; color: #D1D5DB; }
 .footer-link { color: #D1D5DB; display: inline-block; }
 .footer-link:hover { color: #FFFFFF; }
+.lang-switch {
+  border: 1px solid rgba(29, 29, 54, 0.2);
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1d1d36;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+.lang-switch:hover,
+.lang-switch:focus-visible {
+  background-color: #1d1d36;
+  color: #fff;
+  outline: none;
+}
+.lang-switch.hidden {
+  display: none !important;
+}
 `;
 
 function ensureLayoutStyles() {
@@ -223,6 +456,21 @@ function injectLayout(sectionAttribute, html) {
     return target.firstElementChild || target;
   }
   return null;
+}
+
+function configureLanguageSwitch(container) {
+  if (!container) return;
+  const switchLink = container.querySelector('[data-lang-switch]');
+  if (!switchLink) return;
+
+  const { altHref, altLabel } = document.documentElement.dataset;
+  if (altHref) {
+    switchLink.href = altHref;
+    switchLink.textContent = altLabel || (isChinesePage ? 'EN' : '中文');
+    switchLink.classList.remove('hidden');
+  } else {
+    switchLink.classList.add('hidden');
+  }
 }
 
 function initializeMobileMenu(container) {
@@ -257,6 +505,8 @@ document.addEventListener('DOMContentLoaded', () => {
   injectLayout('desktop-footer', desktopFooterHTML);
   const mobileHeader = injectLayout('mobile-header', mobileHeaderHTML);
   injectLayout('mobile-footer', mobileFooterHTML);
+  configureLanguageSwitch(desktopHeader);
+  configureLanguageSwitch(mobileHeader);
   applyHeaderOffset(desktopHeader || mobileHeader);
   initializeMobileMenu(mobileHeader);
 });

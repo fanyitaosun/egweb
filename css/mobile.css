@@ -244,12 +244,14 @@ body {
 }
 
 .panel-text {
-  background-color: var(--brand-navy);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--brand-navy);
   padding: 2.5rem 2rem;
   border-radius: 1.5rem;
   text-align: center;
   letter-spacing: 0.05em;
+  box-shadow: 0 22px 44px rgba(29, 29, 54, 0.18);
+  border: 1px solid rgba(29, 29, 54, 0.08);
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -258,7 +260,7 @@ body {
 .panel-text h3 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--brand-blue);
+  color: var(--brand-navy);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
@@ -266,6 +268,7 @@ body {
 .panel-text p {
   line-height: 1.7;
   font-size: 0.95rem;
+  color: rgba(29, 29, 54, 0.88);
 }
 
 .fade-in {

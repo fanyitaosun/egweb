@@ -2,7 +2,7 @@
 header {
   position: sticky;
   top: 0;
-  z-index: 100; /* 确保在最上层 */
+  z-index: 10; /* 确保在最上层 */
 }
 
 /* Nav吸顶（位于Header下方） */
